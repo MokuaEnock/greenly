@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+* {
+  font-family: 'Mulish', sans-serif;
+}
+
 body {
   width: 100%;
   height: max-content;
