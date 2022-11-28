@@ -12,6 +12,7 @@ function App() {
         <Route path="/about" element={<Landing />} />
         <Route path="/services" element={<Landing />} />
         <Route path="/events" element={<Landing />} />
+        <Route path="/process" element={<Landing />} />
         <Route path="/contact" element={<Landing />} />
         <Route path="/auth" element={<Landing />} />
       </Routes>
