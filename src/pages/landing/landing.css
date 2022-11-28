@@ -15,7 +15,6 @@
     width: 100%;
     height: 10vw;
     font-size: 1.8vw;
-    border: thin solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,7 +41,6 @@
     width: 100%;
     height: 22vw;
     font-size: 1.8vw;
-    border: thin solid black;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -60,6 +58,11 @@
     height: 90%;
 }
 
+.recycle-image>img {
+    width: 100%;
+    border-radius: inherit;
+}
+
 #recycle-icon {
     width: 6vw;
     height: 6vw;
@@ -69,12 +72,96 @@
     z-index: 1;
 }
 
-
 #recycle-image1 {
     margin-right: -4vw;
+    border-top-left-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    border-right: 2vw solid grey;
 }
 
 #recycle-image2 {
     margin-left: -4vw;
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    border-left: 2vw solid green;
 
+}
+
+#impact {
+    width: 100%;
+    height: 25vw;
+    border: thin solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#impact-title {
+    font-size: 3vw;
+    font-weight: bold;
+    width: 100%;
+    height: 5vw;
+    border: thin solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#impact-content {
+    width: 100%;
+    height: 20vw;
+    border: thin solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#impact-content>div {
+    width: 23%;
+    border-radius: .5vw;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.span-image {
+    border: thin solid black;
+    width: 100%;
+    height: 35%;
+    border-radius: 5vw;
+}
+
+.span-number {
+    width: 100%;
+    height: 20%;
+    border-radius: 3vw;
+    font-size: 3.5vw;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.span-word {
+    width: 100%;
+    height: 20%;
+    font-size: 1.5vw;
+    border-radius: 3vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
 }

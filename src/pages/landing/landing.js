@@ -17,7 +17,36 @@ export default function Landing() {
         <div id="recycle-icon"></div>
         <div className="recycle-image" id="recycle-image2"></div>
       </section>
-      <section id="impact"></section>
+
+      <section id="impact">
+        <div id="impact-title">Our Impact</div>
+        <div id="impact-content">
+          <div>
+            <span className="span-image"></span>
+            <span className="span-number">500</span>
+            <span className="span-word">Waste Collectors</span>
+          </div>
+
+          <div>
+            <span className="span-image"></span>
+            <span className="span-number">500</span>
+            <span className="span-word">Proffesional Workers</span>
+          </div>
+
+          <div>
+            <span className="span-image"></span>
+            <span className="span-number">500</span>
+            <span className="span-word">Industries Served</span>
+          </div>
+
+          <div>
+            <span className="span-image"></span>
+            <span className="span-number">500</span>
+            <span className="span-word">Waste recycled</span>
+          </div>
+        </div>
+      </section>
+
       <section id="assistance"></section>
     </main>
   );
