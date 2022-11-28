@@ -47,7 +47,31 @@ export default function Landing() {
         </div>
       </section>
 
-      <section id="assistance"></section>
+      <section id="assistance">
+        <div id="assistance-title">
+          <span id="title">How may we be of assistance?</span>
+          <span id="par">We collect and recycle solid waste</span>
+        </div>
+        <div id="assistance-content">
+          <div id="picking">
+            <span id="title">Dispose</span>
+            <span id="wording">
+              <span>
+                We collect waste all over Nairobi the country, our goal is to
+                enable proper waste disposal options are available to you.
+              </span>
+            </span>
+          </div>
+          <div id="collection">
+            <span id="title">Collect</span>
+            <span id="wording">
+              <span>
+                Collect Raw materials form us for recycling,we trust that you will keep the dream alive by handling the provided materials approprIately
+              </span>
+            </span>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

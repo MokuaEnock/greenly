@@ -90,7 +90,6 @@
 #impact {
     width: 100%;
     height: 25vw;
-    border: thin solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,7 +102,6 @@
     font-weight: bold;
     width: 100%;
     height: 5vw;
-    border: thin solid black;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -114,7 +112,6 @@
 #impact-content {
     width: 100%;
     height: 20vw;
-    border: thin solid black;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -131,7 +128,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    /* box-shadow: 0.2vw 0.2vw .5vw .1vw grey; */
 }
 
 .span-image {
@@ -165,3 +162,94 @@
     justify-content: space-evenly;
     text-align: center;
 }
+
+#assistance {
+    width: 100%;
+    height: 20vw;
+    border: thin solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#assistance-title {
+    height: 40%;
+    width: 100%;
+    border: thin solid black;
+    font-size: 1.7vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#assistance-title>#title {
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+#assistance-content {
+    height: 60%;
+    width: 100%;
+    border: thin solid black;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#assistance-content>div {
+    width: 40%;
+    height: 9vw;
+    border: thin solid black;
+    border-radius: 6vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+#picking>#title,
+#collection>#title {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    margin-left: -.7vw;
+    font-weight: bold;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#picking>#wording,
+#collection>#wording {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    height: 7vw;
+
+}
+
+#picking>#wording>span,
+#collection>#wording>span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 1.5vw;
+    height: max-content;
+    width: 100%;
+}
+
+
+#assistance-content #collection {}
