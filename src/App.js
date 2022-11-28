@@ -3,18 +3,24 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./pages/navbar";
 import Landing from "./pages/landing/landing";
 import Footer from "./pages/footer";
+import About from "./pages/about/about";
+import Services from "./pages/services/services";
+import Events from "./pages/events/events";
+import Process from "./pages/process/process";
+import Contact from "./pages/contact/contact";
+import Auth from "./pages/auth/auth";
 function App() {
   return (
     <BrowserRouter>
       <NavBar />
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/about" element={<Landing />} />
-        <Route path="/services" element={<Landing />} />
-        <Route path="/events" element={<Landing />} />
-        <Route path="/process" element={<Landing />} />
-        <Route path="/contact" element={<Landing />} />
-        <Route path="/auth" element={<Landing />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/process" element={<Process />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/auth" element={<Auth />} />
       </Routes>
       <Footer />
     </BrowserRouter>
