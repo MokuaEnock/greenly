@@ -91,31 +91,66 @@ export default function Landing() {
             <span id="title">Agriculture</span>
             <span id="content"></span>
           </div>
-          
+
           <div>
             <span id="image"></span>
             <span id="title">Agriculture</span>
             <span id="content"></span>
           </div>
-          
+
           <div>
             <span id="image"></span>
             <span id="title">Agriculture</span>
             <span id="content"></span>
           </div>
-          
+
           <div>
             <span id="image"></span>
             <span id="title">Agriculture</span>
             <span id="content"></span>
           </div>
-          
         </div>
       </section>
 
       <section id="image-tag"></section>
 
-      <section id="process"></section>
+      <section id="process">
+        <div id="heading">
+          <span id="title">The process</span>
+          <span id="word">
+            Learn what happens to your waste from collection
+            <br />
+            to recycling and reusing.
+          </span>
+        </div>
+
+        <div id="content">
+          <div className="up">
+            <span className="process-icon"></span>
+            <span className="process-label"></span>
+          </div>
+          <div className="down">
+            <span className="process-label"></span>
+            <span className="process-icon"></span>
+          </div>
+          <div className="up">
+            <span className="process-icon"></span>
+            <span className="process-label"></span>
+          </div>
+          <div className="down">
+            <span className="process-label"></span>
+            <span className="process-icon"></span>
+          </div>
+          <div className="up">
+            <span className="process-icon"></span>
+            <span className="process-label"></span>
+          </div>
+          <div className="down">
+            <span className="process-label"></span>
+            <span className="process-icon"></span>
+          </div>
+        </div>
+      </section>
 
       <section id="partners"></section>
 
