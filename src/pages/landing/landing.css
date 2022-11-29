@@ -78,7 +78,7 @@
     width: 6vw;
     height: 6vw;
     border-radius: 50%;
-    border: 1vw solid white;
+    border: 1vw solid #ECF0F8;
     background-color: green;
     z-index: 1;
 }
@@ -87,14 +87,14 @@
     margin-right: -4vw;
     border-top-left-radius: 2vw;
     border-bottom-left-radius: 2vw;
-    border-right: 1vw solid white;
+    border-right: 1vw solid #ECF0F8;
 }
 
 #recycle-image2 {
     margin-left: -4vw;
     border-top-right-radius: 2vw;
     border-bottom-right-radius: 2vw;
-    border-left: 1vw solid white;
+    border-left: 1vw solid #ECF0F8;
 
 }
 
@@ -145,13 +145,14 @@
 }
 
 .span-image {
-    border: thin solid black;
+    background-color: #ffffff;
     width: 100%;
     height: 35%;
     border-radius: 5vw;
 }
 
 .span-number {
+    margin-top: 2vw;
     width: 100%;
     height: 20%;
     border-radius: 3vw;
@@ -176,6 +177,7 @@
     text-align: center;
 }
 
+/* impact =============================================== */
 #assistance {
     width: 100%;
     height: 20vw;
@@ -201,6 +203,11 @@
     font-size: 3vw;
 }
 
+#assistance-title>#par {
+    color: grey;
+}
+
+
 #assistance-content {
     height: 60%;
     width: 100%;
@@ -214,7 +221,6 @@
 #assistance-content>div {
     width: 40%;
     height: 9vw;
-    border: thin solid black;
     border-radius: 6vw;
     display: flex;
     flex-direction: row;
@@ -222,10 +228,15 @@
     justify-content: space-evenly;
     margin-left: 1vw;
     margin-right: 1vw;
+    background-color: #ffffff;
+    cursor: pointer;
+    box-shadow: .02vw .02vw .5vw grey;
 }
 
 #picking>#title,
 #collection>#title {
+    background-color: #014421;
+    color: #ECF0F8;
     width: 8vw;
     height: 8vw;
     border-radius: 50%;
