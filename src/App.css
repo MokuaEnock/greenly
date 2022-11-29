@@ -11,6 +11,8 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  background-color: #ECF0F8;
+  color: #014421;
 }
 
 #root {

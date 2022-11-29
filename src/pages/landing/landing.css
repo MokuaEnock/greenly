@@ -1,8 +1,11 @@
+/* default ========================================================= */
 #landing {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    background-color: #ECF0F8;
+    color: #014421;
 
 }
 
@@ -10,6 +13,8 @@
     margin-top: .5vw;
     margin-bottom: .5vw;
 }
+
+/* default ========================================================= */
 
 #tagline {
     width: 100%;
@@ -33,8 +38,7 @@
 }
 
 #tagline>#paragraph {
-    word-spacing: .5vw;
-    font-size: 1.5vw;
+    font-size: 1.7vw;
 }
 
 #images {
