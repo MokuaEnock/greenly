@@ -166,7 +166,6 @@
 #assistance {
     width: 100%;
     height: 20vw;
-    border: thin solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -176,7 +175,6 @@
 #assistance-title {
     height: 40%;
     width: 100%;
-    border: thin solid black;
     font-size: 1.7vw;
     display: flex;
     flex-direction: column;
@@ -193,7 +191,6 @@
 #assistance-content {
     height: 60%;
     width: 100%;
-    border: thin solid black;
     font-size: 2vw;
     display: flex;
     flex-direction: row;
@@ -251,5 +248,59 @@
     width: 100%;
 }
 
+#solutions {
+    height: 30vw;
+    width: 100%;
+    border: thin solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
 
-#assistance-content #collection {}
+#solutions #heading {
+    width: 100%;
+    height: 30%;
+    border: thin solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#heading #title {
+    width: 100%;
+    font-size: 3vw;
+    font-weight: bold;
+    height: min-content;
+}
+
+#heading #word {
+    width: 100%;
+    font-size: 1.7vw;
+    height: min-content;
+    text-align: center;
+}
+
+#solutions>#content {
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#solutions>#content>div {
+    width: 17%;
+    height: 90%;
+    border: thin solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top-left-radius: 10vw;
+    border-top-right-radius: 10vw;
+}

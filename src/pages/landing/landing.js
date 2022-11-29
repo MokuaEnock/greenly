@@ -66,12 +66,40 @@ export default function Landing() {
             <span id="title">Collect</span>
             <span id="wording">
               <span>
-                Collect Raw materials form us for recycling,we trust that you will keep the dream alive by handling the provided materials approprIately
+                Collect Raw materials form us for recycling,we trust that you
+                will keep the dream alive by handling the provided materials
+                approprIately
               </span>
             </span>
           </div>
         </div>
       </section>
+
+      <section id="solutions">
+        <div id="heading">
+          <span id="title">Solutions for various Industries</span>
+          <span id="word">
+            Whatever your industry does be sure that we have a solution for you
+            <br />
+            that is enviromental friendly.
+          </span>
+        </div>
+
+        <div id="content">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </section>
+
+      <section id="image-tag"></section>
+
+      <section id="process"></section>
+
+      <section id="partners"></section>
+
+      <section id="request"></section>
     </main>
   );
 }
