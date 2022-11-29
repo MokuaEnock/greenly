@@ -127,26 +127,26 @@ export default function Landing() {
         <div id="content">
           <div className="up">
             <span className="process-icon"></span>
-            <span className="process-label"></span>
+            <span className="process-label">Collection </span>
           </div>
           <div className="down">
-            <span className="process-label"></span>
+            <span className="process-label">Sorting</span>
             <span className="process-icon"></span>
           </div>
           <div className="up">
             <span className="process-icon"></span>
-            <span className="process-label"></span>
+            <span className="process-label">De-Toxing</span>
           </div>
           <div className="down">
-            <span className="process-label"></span>
+            <span className="process-label">Treatment</span>
             <span className="process-icon"></span>
           </div>
           <div className="up">
             <span className="process-icon"></span>
-            <span className="process-label"></span>
+            <span className="process-label">Distribution</span>
           </div>
           <div className="down">
-            <span className="process-label"></span>
+            <span className="process-label">Recycling</span>
             <span className="process-icon"></span>
           </div>
         </div>
