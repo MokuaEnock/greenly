@@ -3,6 +3,8 @@ import "./landing.css";
 import Dumpsite1 from "../images/dumpsite1.jpg";
 import Dumpsite2 from "../images/dumpsite2.jpg";
 import Dumpsite3 from "../images/dumpsite3.jpg";
+import Paradise1 from "../images/paradise1.jpg";
+import Paradise2 from "../images/paradise2.jpg";
 import Tagimage from "../images/Recycle.svg";
 export default function Landing() {
   return (
@@ -16,9 +18,13 @@ export default function Landing() {
       </section>
 
       <section id="images">
-        <div className="recycle-image" id="recycle-image1"></div>
+        <div className="recycle-image" id="recycle-image1">
+          <img src={Dumpsite1} alt="dumpsite1" />
+        </div>
         <div id="recycle-icon"></div>
-        <div className="recycle-image" id="recycle-image2"></div>
+        <div className="recycle-image" id="recycle-image2">
+          <img src={Paradise2} alt="dumpsite1" />
+        </div>
       </section>
 
       <section id="impact">

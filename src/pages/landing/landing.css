@@ -6,6 +6,7 @@
     justify-content: flex-start;
     background-color: #ECF0F8;
     color: #014421;
+    border: thin solid #ECF0F8;
 
 }
 
@@ -39,11 +40,13 @@
 
 #tagline>#paragraph {
     font-size: 1.7vw;
+    color: grey;
 }
 
+/* images =============================================== */
 #images {
     width: 100%;
-    height: 22vw;
+    height: 29vw;
     font-size: 1.8vw;
     display: flex;
     flex-direction: row;
@@ -53,7 +56,10 @@
 }
 
 #images>* {
-    border: thin solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -64,6 +70,7 @@
 
 .recycle-image>img {
     width: 100%;
+    height: 100%;
     border-radius: inherit;
 }
 
@@ -71,8 +78,8 @@
     width: 6vw;
     height: 6vw;
     border-radius: 50%;
-    border: 1vw solid black;
-    background-color: white;
+    border: 1vw solid white;
+    background-color: green;
     z-index: 1;
 }
 
@@ -80,17 +87,19 @@
     margin-right: -4vw;
     border-top-left-radius: 2vw;
     border-bottom-left-radius: 2vw;
-    border-right: 2vw solid grey;
+    border-right: 1vw solid white;
 }
 
 #recycle-image2 {
     margin-left: -4vw;
     border-top-right-radius: 2vw;
     border-bottom-right-radius: 2vw;
-    border-left: 2vw solid green;
+    border-left: 1vw solid white;
 
 }
 
+
+/* impact =============================================== */
 #impact {
     width: 100%;
     height: 25vw;
