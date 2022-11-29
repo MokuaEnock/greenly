@@ -345,3 +345,11 @@
     align-items: center;
 
 }
+
+#image-tag {
+    width: 110%;
+    height: 35vw;
+    background-color: white;
+    border: thin solid black;
+
+}
