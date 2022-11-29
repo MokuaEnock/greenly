@@ -1,6 +1,9 @@
 import React from "react";
 import "./landing.css";
-
+import Dumpsite1 from "../images/dumpsite1.jpg";
+import Dumpsite2 from "../images/dumpsite2.jpg";
+import Dumpsite3 from "../images/dumpsite3.jpg";
+import Tagimage from "../images/Recycle.svg";
 export default function Landing() {
   return (
     <main id="landing">
@@ -112,7 +115,9 @@ export default function Landing() {
         </div>
       </section>
 
-      <section id="image-tag"></section>
+      <section id="image-tag">
+        <img src={Tagimage} alt="tag" />
+      </section>
 
       <section id="process">
         <div id="heading">
