@@ -152,7 +152,17 @@ export default function Landing() {
         </div>
       </section>
 
-      <section id="partners"></section>
+      <section id="partners">
+        <div id="title">Meet Our Partners</div>
+        <div id="content">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
 
       <section id="request"></section>
     </main>
