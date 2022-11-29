@@ -164,7 +164,16 @@ export default function Landing() {
         </div>
       </section>
 
-      <section id="request"></section>
+      <section id="request">
+        <div id="image"></div>
+        <div id="detail">
+          <span>
+            Join us today in turning Africa green, request a <br />
+            free waste collection from us.
+          </span>
+          <button>Request for waste Collection</button>
+        </div>
+      </section>
     </main>
   );
 }
