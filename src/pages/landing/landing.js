@@ -86,10 +86,30 @@ export default function Landing() {
         </div>
 
         <div id="content">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div>
+            <span id="image"></span>
+            <span id="title">Agriculture</span>
+            <span id="content"></span>
+          </div>
+          
+          <div>
+            <span id="image"></span>
+            <span id="title">Agriculture</span>
+            <span id="content"></span>
+          </div>
+          
+          <div>
+            <span id="image"></span>
+            <span id="title">Agriculture</span>
+            <span id="content"></span>
+          </div>
+          
+          <div>
+            <span id="image"></span>
+            <span id="title">Agriculture</span>
+            <span id="content"></span>
+          </div>
+          
         </div>
       </section>
 
