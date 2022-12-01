@@ -9,6 +9,7 @@ import Events from "./pages/events/events";
 import Process from "./pages/process/process";
 import Contact from "./pages/contact/contact";
 import Auth from "./pages/auth/auth";
+import Collector from "./pages/collector/Collector";
 function App() {
   return (
     <BrowserRouter>
@@ -21,6 +22,7 @@ function App() {
         <Route path="/process" element={<Process />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/auth" element={<Auth />} />
+        <Route path="/collector" element={<Collector />} />
       </Routes>
       <Footer />
     </BrowserRouter>

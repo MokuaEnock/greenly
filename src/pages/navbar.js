@@ -9,6 +9,7 @@ export default function NavBar() {
         <NavLink to="/services">Services</NavLink>
         <NavLink to="/process">Process</NavLink>
         <NavLink to="/events">Events</NavLink>
+        <NavLink to="/collector">Collector</NavLink>
       </div>
       <div id="header-forms">
         <NavLink to="/contact">Contact</NavLink>
