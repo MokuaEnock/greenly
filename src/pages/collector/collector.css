@@ -126,6 +126,9 @@
     width: 65%;
     height: 100%;
     border: thin solid #014421;
+    display: grid;
+    grid-template-columns: repeat(3, 18vw);
+    grid-template-rows: repeat(auto, 20vw);
 }
 
 #collector-container-view {
@@ -134,6 +137,15 @@
     border: thin solid #014421;
 }
 
+/* waste card ================================================================== */
+
+.waste-card {
+    /* width: 15vw;
+    height: 20vw; */
+    margin-left: 2.5vw;
+    margin-top: 2vw;
+    border: thin solid #014421;
+}
 
 /* collector-profile ========================================================= */
 

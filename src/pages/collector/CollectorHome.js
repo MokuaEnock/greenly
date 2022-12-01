@@ -1,4 +1,8 @@
 export default function CollectorHome() {
+  function Card() {
+    return <div className="waste-card"></div>;
+  }
+
   return (
     <main id="collector-home">
       <section id="collector-stats">
@@ -9,7 +13,17 @@ export default function CollectorHome() {
       <section id="collector-collections">
         <div id="collector-collection-header">New collections</div>
         <div id="collector-container">
-          <div id="collector-container-list"></div>
+          <div id="collector-container-list">
+            <div className="waste-card"></div>
+            <div className="waste-card"></div>
+            <div className="waste-card"></div>
+            <div className="waste-card"></div>
+            <div className="waste-card"></div>
+            <div className="waste-card"></div>
+            <div className="waste-card"></div>
+            <div className="waste-card"></div>
+            <div className="waste-card"></div>
+          </div>
           <div id="collector-container-view"></div>
         </div>
       </section>
