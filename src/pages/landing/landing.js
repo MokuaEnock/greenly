@@ -6,6 +6,10 @@ import Dumpsite3 from "../images/dumpsite3.jpg";
 import Paradise1 from "../images/paradise1.jpg";
 import Paradise2 from "../images/paradise2.jpg";
 import Tagimage from "../images/Recycle.svg";
+import Paper from "../images/paper.jpg";
+import Agric from "../images/agriculture.jpg";
+import Steel from "../images/steel.jpg";
+import Fashion from "../images/fashion.jpg";
 export default function Landing() {
   return (
     <main id="landing">
@@ -96,27 +100,41 @@ export default function Landing() {
 
         <div id="content">
           <div>
-            <span id="image"></span>
+            <span id="image">
+              <img src={Agric} alt="agric" />
+            </span>
             <span id="title">Agriculture</span>
-            <span id="content"></span>
+            <span id="content">
+              Producing manure for millions of farmers in Africa
+            </span>
           </div>
 
           <div>
-            <span id="image"></span>
-            <span id="title">Agriculture</span>
-            <span id="content"></span>
+            <span id="image">
+              <img src={Fashion} alt="agric" />
+            </span>
+            <span id="title">Fashion</span>
+            <span id="content">
+              Contributing to the industry by providing raw materials
+            </span>
           </div>
 
           <div>
-            <span id="image"></span>
-            <span id="title">Agriculture</span>
-            <span id="content"></span>
+            <span id="image">
+              <img src={Paper} alt="agric" />
+            </span>
+            <span id="title">Paper</span>
+            <span id="content">Providing pulp for leading publishers.</span>
           </div>
 
           <div>
-            <span id="image"></span>
-            <span id="title">Agriculture</span>
-            <span id="content"></span>
+            <span id="image">
+              <img src={Steel} alt="agric" />
+            </span>
+            <span id="title">Steel</span>
+            <span id="content">
+              Building Africa by converting some of your waste into steel.
+            </span>
           </div>
         </div>
       </section>
