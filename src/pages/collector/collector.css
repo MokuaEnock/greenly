@@ -1,1 +1,34 @@
+#collector {
+    background-color: #ECF0F8;
+    color: #014421;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
 
+#collector>* {
+    width: 100%;
+    height: 10%;
+}
+
+#collector-bar {
+    width: 100%;
+    height: 4vw;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#collector-bar>* {
+    font-size: 2vw;
+    text-decoration: none;
+    color: #014421;
+}
+
+#collector-bar>* {
+    margin-right: 2vw;
+
+}

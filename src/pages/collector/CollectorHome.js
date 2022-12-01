@@ -1,3 +1,3 @@
 export default function CollectorHome() {
-  return <></>;
+  return <section></section>;
 }
