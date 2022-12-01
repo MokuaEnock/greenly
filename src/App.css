@@ -92,7 +92,7 @@ header a {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  border-radius: .5vw;
+  border-radius: .2vw;
 }
 
 #header-forms>a :hover {
