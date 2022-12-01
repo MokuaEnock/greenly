@@ -1,3 +1,5 @@
 export default function Collectorprofile() {
-  return <section></section>;
+  return <section id="collector-profile">
+    
+  </section>;
 }
