@@ -10,6 +10,7 @@ export default function NavBar() {
         <NavLink to="/process">Process</NavLink>
         <NavLink to="/events">Events</NavLink>
         <NavLink to="/collector">Collector</NavLink>
+        <NavLink to="/disposer">Disposer</NavLink>
       </div>
       <div id="header-forms">
         <NavLink to="/contact">Contact</NavLink>

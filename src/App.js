@@ -10,6 +10,7 @@ import Process from "./pages/process/process";
 import Contact from "./pages/contact/contact";
 import Auth from "./pages/auth/auth";
 import Collector from "./pages/collector/Collector";
+import Disposer from "./pages/disposer/Disposer";
 function App() {
   return (
     <BrowserRouter>
@@ -23,6 +24,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/auth" element={<Auth />} />
         <Route path="/collector" element={<Collector />} />
+        <Route path="/disposer" element={<Disposer />} />
       </Routes>
       <Footer />
     </BrowserRouter>
