@@ -1,7 +1,7 @@
 export default function CollectorHome() {
-  function Card() {
-    return <div className="waste-card"></div>;
-  }
+  // function Card() {
+  //   return <div className="waste-card"></div>;
+  // }
 
   return (
     <main id="collector-home">
