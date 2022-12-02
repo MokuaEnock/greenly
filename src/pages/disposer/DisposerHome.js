@@ -1,7 +1,13 @@
 export default function DisposerHome() {
   return (
     <main id="disposer-home">
-      <div id="disposer-home-title">Hello Mokua</div>
+      <div id="disposer-home-title">Your Contributions</div>
+      <section id="disposer-stats">
+        <div id="disposer-stats-title"></div>
+        <div id="disposer-stats-stats"></div>
+        <div id="disposer-stats-words"></div>
+      </section>
+      <div id="disposer-home-title">Request for a disposal</div>
       <form id="disposer-form">
         <span></span>
         <span></span>
