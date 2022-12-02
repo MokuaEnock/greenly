@@ -77,18 +77,30 @@ bright : #5EDB12 */
     width: 25%;
     height: 100%;
     border: thin solid #172e08;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #disposer-stats-stats {
     width: 50%;
     height: 100%;
     border: thin solid #172e08;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #disposer-stats-words {
     width: 25%;
     height: 100%;
     border: thin solid #172e08;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
