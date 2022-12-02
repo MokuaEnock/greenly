@@ -1,6 +1,6 @@
 #collector {
     background-color: #ECF0F8;
-    color: #014421;
+    color: #172E08;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -25,7 +25,7 @@
 #collector-bar>* {
     font-size: 2vw;
     text-decoration: none;
-    color: #014421;
+    color: #172E08;
 }
 
 #collector-bar>* {
@@ -48,7 +48,7 @@
 #collector-stats {
     width: 100%;
     height: 25vw;
-    border: thin solid #014421;
+    border: thin solid #172E08;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -56,7 +56,7 @@
 }
 
 #collector-stats-terms {
-    border: thin solid #014421;
+    border: thin solid #172E08;
     width: 20%;
     height: 100%;
     display: flex;
@@ -66,7 +66,7 @@
 }
 
 #collector-stats-graph {
-    border: thin solid #014421;
+    border: thin solid #172E08;
     width: 60%;
     height: 100%;
     display: flex;
@@ -76,7 +76,7 @@
 }
 
 #collector-stats-figures {
-    border: thin solid #014421;
+    border: thin solid #172E08;
     width: 20%;
     height: 100%;
     display: flex;
@@ -91,7 +91,7 @@
 #collector-collections {
     height: max-content;
     width: 100%;
-    border: thin solid #014421;
+    border: thin solid #172E08;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -108,7 +108,7 @@
     align-items: center;
     font-weight: bold;
     background-color: #ECF0F8;
-    border: thin solid #014421;
+    border: thin solid #172E08;
 
 }
 
@@ -125,7 +125,7 @@
 #collector-container-list {
     width: 65%;
     height: 100%;
-    border: thin solid #014421;
+    border: thin solid #172E08;
     display: grid;
     grid-template-columns: repeat(3, 18vw);
     grid-template-rows: repeat(auto, 20vw);
@@ -134,7 +134,7 @@
 #collector-container-view {
     width: 35%;
     height: 100%;
-    border: thin solid #014421;
+    border: thin solid #172E08;
 }
 
 /* waste card ================================================================== */
@@ -144,7 +144,7 @@
     height: 20vw; */
     margin-left: 2.5vw;
     margin-top: 2vw;
-    border: thin solid #014421;
+    border: thin solid #172E08;
 }
 
 /* collector-profile ========================================================= */

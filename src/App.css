@@ -12,7 +12,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   background-color: #ECF0F8;
-  color: #014421;
+  color: #172E08;
 }
 
 #root {
@@ -56,7 +56,7 @@ header>* {
 
 header a {
   text-decoration: none;
-  color: #014421;
+  color: #172E08;
 }
 
 #header-logo {
@@ -85,7 +85,7 @@ header a {
 
 #header-forms>a {
   width: 45%;
-  background-color: #014421;
+  background-color: #172E08;
   height: 70%;
   color: #ECF0F8;
   display: flex;
@@ -96,8 +96,8 @@ header a {
 }
 
 #header-forms>a :hover {
-  color: #014421;
-  border: double #014421 0.2vw;
+  color: #172E08;
+  border: double #172E08 0.2vw;
   background-color: #ECF0F8;
 }
 
