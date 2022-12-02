@@ -1,6 +1,6 @@
 import "./disposer.css";
 import DisposerHome from "./DisposerHome";
-import DisposerProfile from "./DisposerProfile";
+// import DisposerProfile from "./DisposerProfile";
 import { Link } from "react-router-dom";
 export default function Disposer() {
   return (
@@ -11,7 +11,7 @@ export default function Disposer() {
       </div>
 
       <DisposerHome />
-      <DisposerProfile />
+      {/* <DisposerProfile /> */}
     </main>
   );
 }
