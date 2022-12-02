@@ -11,7 +11,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: #ECF0F8;
+  background-color: #d8ffc0;
   color: #172E08;
 }
 
@@ -63,6 +63,9 @@ header a {
   border: thin solid black;
   height: 100%;
   width: 25%;
+  font-size: 3vw;
+  font-weight: bold;
+
 }
 
 #header-info {
@@ -87,7 +90,7 @@ header a {
   width: 45%;
   background-color: #172E08;
   height: 70%;
-  color: #ECF0F8;
+  color: #d8ffc0;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -95,11 +98,8 @@ header a {
   border-radius: .2vw;
 }
 
-#header-forms>a :hover {
+#header-forms :hover {
   color: #172E08;
-  border: double #172E08 0.2vw;
-  background-color: #ECF0F8;
+  border: double #172E08 0.5vw;
+  background-color: #d8ffc0;
 }
-
-
-

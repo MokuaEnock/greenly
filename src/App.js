@@ -19,10 +19,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/events" element={<Events />} />
+        {/* <Route path="/services" element={<Services />} /> */}
+        {/* <Route path="/events" element={<Events />} /> */}
         <Route path="/process" element={<Process />} />
-        <Route path="/contact" element={<Contact />} />
+        {/* <Route path="/contact" element={<Contact />} /> */}
         <Route path="/auth" element={<Auth />} />
         <Route path="/collector" element={<Collector />} />
         <Route path="/disposer" element={<Disposer />} />
