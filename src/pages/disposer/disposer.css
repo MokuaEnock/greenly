@@ -1,1 +1,36 @@
+#disposer-nav {
+    width: 100%;
+    height: 4vw;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
+}
+
+/* colors :#172E08
+white :#D8FFC0
+bright : #5EDB12 */
+
+#disposer-nav>* {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    text-decoration: none;
+    width: 10%;
+    height: 90%;
+    background-color: #172e08;
+    color: #5edb12;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8vw;
+    border-radius: .2vw;
+}
+
+#disposer-nav>*:hover {
+    background-color: #d8ffc0;
+    color: #172e08;
+    border: .3vw double #172e08;
+}

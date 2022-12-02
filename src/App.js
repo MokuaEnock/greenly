@@ -11,6 +11,7 @@ import Contact from "./pages/contact/contact";
 import Auth from "./pages/auth/auth";
 import Collector from "./pages/collector/Collector";
 import Disposer from "./pages/disposer/Disposer";
+
 function App() {
   return (
     <BrowserRouter>
