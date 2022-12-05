@@ -1,5 +1,14 @@
 export default function Auth() {
-  return <main className="auth">
-    Sign Up
-  </main>;
+  return (
+    <main className="auth">
+      <form id="login">
+        <span>Get Started</span>
+        <input type="text" placeholder="Enter username" />
+        <input type="email" placeholder="Enter email" />
+        <input type="password" placeholder="Enter password" />
+        <input type="password" placeholder="Confirm password" />
+        <button type="submit">Continue</button>
+      </form>
+    </main>
+  );
 }
