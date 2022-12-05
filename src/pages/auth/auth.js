@@ -1,3 +1,5 @@
+import "./auth.css";
+import { useState, useEffect } from "react";
 export default function Auth() {
   return (
     <main className="auth">
@@ -7,7 +9,9 @@ export default function Auth() {
         <input type="email" placeholder="Enter email" />
         <input type="password" placeholder="Enter password" />
         <input type="password" placeholder="Confirm password" />
-        <button className="form-button-submit" type="submit">Continue</button>
+        <button className="form-button-submit" type="submit">
+          Continue
+        </button>
       </form>
     </main>
   );
