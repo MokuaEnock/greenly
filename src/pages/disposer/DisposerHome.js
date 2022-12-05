@@ -49,6 +49,8 @@ export default function DisposerHome() {
             <label>Any additional instructions?</label>
             <input type="text" />
           </span>
+
+          <button type="submit">Place order</button>
         </form>
       </section>
 
