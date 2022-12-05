@@ -1,14 +1,33 @@
 import "./auth.css";
 import { useState, useEffect } from "react";
 
-export default function Login() {
+export default function Login({ setuser }) {
   let [username, setUsername] = useState("");
   let [email, setEmail] = useState("");
   let [login, setLogin] = useState("");
   let [password, setPassword] = useState("");
   let [errors, setErrors] = useState([]);
 
-  function handleSubmit() {}
+  function handleSubmit(e) {
+    e.preventDefault();
+    let user = {
+      username,
+      email,
+      password,
+    };
+
+    fetch("", {
+      method: "POST",
+      headers: { "Content-Type": "applicaton/json" },
+      body: JSON.stringify(user),
+    }).then((res) => {
+      if (res.ok) {
+        res.json().then(setuser);
+      } else {
+        res.json().then((e) => setErrors(Object.entries(e.error).flat()));
+      }
+    });
+  }
 
   return (
     <main className="auth" onSubmit={handleSubmit}>

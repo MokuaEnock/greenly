@@ -28,7 +28,7 @@ function App() {
         <Route path="/process" element={<Process />} />
         {/* <Route path="/contact" element={<Contact />} /> */}
         <Route path="/auth" element={<Auth />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<Login setUser={setUser} />} />
         <Route path="/collector" element={<Collector />} />
         <Route path="/disposer" element={<Disposer />} />
       </Routes>
