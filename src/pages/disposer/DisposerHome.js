@@ -67,7 +67,7 @@ export default function DisposerHome() {
                 <span>Location</span>
               </div>
 
-              <div>
+              <div id="additional-info">
                 <span>Weight</span>
                 <span>12/03/2022</span>
                 <span>Order Id</span>
@@ -86,7 +86,9 @@ export default function DisposerHome() {
           <div className="disposer-item"></div>
         </div>
 
-        <div id="disposer-view"></div>
+        <div id="disposer-view">
+          <span></span>
+        </div>
       </section>
     </main>
   );
