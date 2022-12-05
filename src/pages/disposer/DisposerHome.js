@@ -58,7 +58,19 @@ export default function DisposerHome() {
 
       <section id="disposer-previous">
         <div id="disposer-list">
-          <div className="disposer-item"></div>
+          <div className="disposer-item">
+            <div className="disposer-item-image"></div>
+
+            <div className="disposer-item-info">
+              <span></span>
+            </div>
+
+            <div className="disposer-item-add">
+              <button className="update">Update</button>
+              <button className="delete">Delete</button>
+            </div>
+          </div>
+
           <div className="disposer-item"></div>
           <div className="disposer-item"></div>
           <div className="disposer-item"></div>
