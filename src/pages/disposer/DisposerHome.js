@@ -32,12 +32,12 @@ export default function DisposerHome() {
 
           <span>
             <label>The weight of the waste?</label>
-            <input type="email" />
+            <input type="number" minimum="1" maximum="100" />
           </span>
 
           <span>
             <label>Type of waste?</label>
-            <input type="email" />
+            <input type="text" />
           </span>
 
           <span>

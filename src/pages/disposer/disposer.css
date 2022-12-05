@@ -164,6 +164,23 @@ bright : #5EDB12 */
     outline: none;
 }
 
+#disposer-form button{
+    width: 25%;
+    height: 10%;
+    font-size: 1.5vw;
+    border: thin solid #172e08;
+    background-color: #172e08;
+    color: #ffffff;
+
+}
+
+#disposer-form button:hover{
+    background-color: #ffffff;
+    color: #172e08;
+    border: double .4vw #172e08;
+}
+
+
 
 
 /* disposer previous =========================================================== */
