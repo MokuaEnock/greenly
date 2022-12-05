@@ -62,8 +62,16 @@ export default function DisposerHome() {
             <div className="disposer-item-image"></div>
 
             <div className="disposer-item-info">
-              <span></span>
-              <span></span>
+              <div>
+                <span>Type</span>
+                <span>Location</span>
+              </div>
+
+              <div>
+                <span>Weight</span>
+                <span>12/03/2022</span>
+                <span>Order Id</span>
+              </div>
             </div>
 
             <div className="disposer-item-add">
