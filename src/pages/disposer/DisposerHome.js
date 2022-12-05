@@ -63,6 +63,7 @@ export default function DisposerHome() {
 
             <div className="disposer-item-info">
               <span></span>
+              <span></span>
             </div>
 
             <div className="disposer-item-add">
