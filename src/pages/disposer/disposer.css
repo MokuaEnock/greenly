@@ -113,6 +113,9 @@ bright : #5EDB12 */
     align-items: center;
     margin-top: -1vw;
     justify-content: center;
+    background-image: url("../images/nairobi.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 #disposer-form>form{
