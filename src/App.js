@@ -9,6 +9,7 @@ import Events from "./pages/events/events";
 import Process from "./pages/process/process";
 import Contact from "./pages/contact/contact";
 import Auth from "./pages/auth/auth";
+import Login from "./pages/auth/login";
 import Collector from "./pages/collector/Collector";
 import Disposer from "./pages/disposer/Disposer";
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/process" element={<Process />} />
         {/* <Route path="/contact" element={<Contact />} /> */}
         <Route path="/auth" element={<Auth />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/collector" element={<Collector />} />
         <Route path="/disposer" element={<Disposer />} />
       </Routes>
