@@ -13,13 +13,9 @@ export default function DisposerHome() {
 
       <div id="disposer-home-title">Request for a disposal</div>
 
-      <form id="disposer-form">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <button type="submit">Order</button>
-      </form>
+      <section id="disposer-form">
+        <form></form>
+      </section>
 
       <div id="disposer-home-title">Previous disposals</div>
 
