@@ -14,7 +14,12 @@ export default function Login() {
     <main className="auth" onSubmit={handleSubmit}>
       <form id="login">
         <span>Login</span>
-        <input type="text" placeholder="Enter username" />
+        <input
+          type="text"
+          placeholder="Enter username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
         <input type="email" placeholder="Enter email" />
         <input type="password" placeholder="Enter password" />
         <button className="form-button-submit" type="submit">
