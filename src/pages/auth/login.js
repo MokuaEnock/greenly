@@ -7,9 +7,11 @@ export default function Login() {
   let [login, setLogin] = useState("");
   let [password, setPassword] = useState("");
   let [errors, setErrors] = useState([]);
-  
+
+  function handleSubmit() {}
+
   return (
-    <main className="auth">
+    <main className="auth" onSubmit={handleSubmit}>
       <form id="login">
         <span>Login</span>
         <input type="text" placeholder="Enter username" />
