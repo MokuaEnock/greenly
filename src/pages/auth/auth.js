@@ -1,3 +1,5 @@
 export default function Auth() {
-  return <main className="auth"></main>;
+  return <main className="auth">
+    Sign Up
+  </main>;
 }

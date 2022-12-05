@@ -9,6 +9,13 @@
 
 }
 
+#login{
+    width: 35%;
+    height: 80%;
+    border: thin solid #172e08;
+    background-color: #ffffff;
+}
+
 /* background-color: #d8ffc0;
 color: #172E08;
  */
