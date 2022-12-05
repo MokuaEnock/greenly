@@ -87,7 +87,15 @@ export default function DisposerHome() {
         </div>
 
         <div id="disposer-view">
-          <span></span>
+          <span className="title">Solid 354</span>
+          <span className="image"></span>
+          <span className="categories">
+            <span className="categ-attributes"></span>
+            <span className="categ-attributes"></span>
+            <span className="categ-attributes"></span>
+            <span className="categ-attributes"></span>
+          </span>
+          <span className="instructions"></span>
         </div>
       </section>
     </main>
