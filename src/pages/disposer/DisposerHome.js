@@ -14,7 +14,42 @@ export default function DisposerHome() {
       <div id="disposer-home-title">Request for a disposal</div>
 
       <section id="disposer-form">
-        <form></form>
+        <form>
+          <span>
+            <label>Hello whats your name?</label>
+            <input type="text" />
+          </span>
+
+          <span>
+            <label>Location for the waste collection?</label>
+            <input type="text" />
+          </span>
+
+          <span>
+            <label>Waste collection date?</label>
+            <input type="date" />
+          </span>
+
+          <span>
+            <label>The weight of the waste?</label>
+            <input type="email" />
+          </span>
+
+          <span>
+            <label>Type of waste?</label>
+            <input type="email" />
+          </span>
+
+          <span>
+            <label>Your E-mail?</label>
+            <input type="email" />
+          </span>
+
+          <span>
+            <label>Any additional instructions?</label>
+            <input type="text" />
+          </span>
+        </form>
       </section>
 
       <div id="disposer-home-title">Previous disposals</div>
