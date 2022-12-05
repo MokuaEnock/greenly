@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 export default function Login({ setuser }) {
   let [username, setUsername] = useState("");
-  let [email, setEmail] = useState("");
+  // let [email, setEmail] = useState("");
   let [login, setLogin] = useState("");
   let [password, setPassword] = useState("");
   let [errors, setErrors] = useState([]);
@@ -12,7 +12,7 @@ export default function Login({ setuser }) {
     e.preventDefault();
     let user = {
       username,
-      email,
+      // email,
       password,
     };
 
@@ -35,22 +35,25 @@ export default function Login({ setuser }) {
         <span>Login</span>
         <input
           type="text"
+          required
           placeholder="Enter username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
 
-        <input
+        {/* <input
           type="email"
           placeholder="Enter email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-        />
+        /> */}
 
         <input
           type="password"
           placeholder="Enter password"
           value={password}
+          required
+
           onChange={(e) => setPassword(e.target.value)}
         />
         <button className="form-button-submit" type="submit">
