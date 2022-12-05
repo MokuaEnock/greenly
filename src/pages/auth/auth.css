@@ -12,8 +12,26 @@
 #login{
     width: 35%;
     height: 80%;
-    border: thin solid #172e08;
     background-color: #ffffff;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#login>*{
+    width: 100%;
+    border: thin solid #172e08;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#login>span{
+    font-size: 2.5vw;
+    font-weight: bold;
+    height: 10%;
 }
 
 /* background-color: #d8ffc0;
