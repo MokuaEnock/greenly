@@ -20,8 +20,20 @@ export default function Login() {
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
-        <input type="email" placeholder="Enter email" />
-        <input type="password" placeholder="Enter password" />
+
+        <input
+          type="email"
+          placeholder="Enter email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+
+        <input
+          type="password"
+          placeholder="Enter password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
         <button className="form-button-submit" type="submit">
           Continue
         </button>
