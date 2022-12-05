@@ -79,11 +79,90 @@ export default function DisposerHome() {
               <button className="delete">Delete</button>
             </div>
           </div>
+          <div className="disposer-item">
+            <div className="disposer-item-image"></div>
 
-          <div className="disposer-item"></div>
-          <div className="disposer-item"></div>
-          <div className="disposer-item"></div>
-          <div className="disposer-item"></div>
+            <div className="disposer-item-info">
+              <div>
+                <span>Type</span>
+                <span>Location</span>
+              </div>
+
+              <div id="additional-info">
+                <span>Weight</span>
+                <span>12/03/2022</span>
+                <span>Order Id</span>
+              </div>
+            </div>
+
+            <div className="disposer-item-add">
+              <button className="update">Update</button>
+              <button className="delete">Delete</button>
+            </div>
+          </div>
+          <div className="disposer-item">
+            <div className="disposer-item-image"></div>
+
+            <div className="disposer-item-info">
+              <div>
+                <span>Type</span>
+                <span>Location</span>
+              </div>
+
+              <div id="additional-info">
+                <span>Weight</span>
+                <span>12/03/2022</span>
+                <span>Order Id</span>
+              </div>
+            </div>
+
+            <div className="disposer-item-add">
+              <button className="update">Update</button>
+              <button className="delete">Delete</button>
+            </div>
+          </div>
+          <div className="disposer-item">
+            <div className="disposer-item-image"></div>
+
+            <div className="disposer-item-info">
+              <div>
+                <span>Type</span>
+                <span>Location</span>
+              </div>
+
+              <div id="additional-info">
+                <span>Weight</span>
+                <span>12/03/2022</span>
+                <span>Order Id</span>
+              </div>
+            </div>
+
+            <div className="disposer-item-add">
+              <button className="update">Update</button>
+              <button className="delete">Delete</button>
+            </div>
+          </div>
+          <div className="disposer-item">
+            <div className="disposer-item-image"></div>
+
+            <div className="disposer-item-info">
+              <div>
+                <span>Type</span>
+                <span>Location</span>
+              </div>
+
+              <div id="additional-info">
+                <span>Weight</span>
+                <span>12/03/2022</span>
+                <span>Order Id</span>
+              </div>
+            </div>
+
+            <div className="disposer-item-add">
+              <button className="update">Update</button>
+              <button className="delete">Delete</button>
+            </div>
+          </div>
         </div>
 
         <div id="disposer-view">
