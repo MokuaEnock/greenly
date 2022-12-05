@@ -7,7 +7,7 @@ export default function Login() {
         <input type="text" placeholder="Enter username" />
         <input type="email" placeholder="Enter email" />
         <input type="password" placeholder="Enter password" />
-        <button type="submit">Continue</button>
+        <button className="form-button-submit" type="submit">Continue</button>
       </form>
     </main>
   );
