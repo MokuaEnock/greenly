@@ -16,13 +16,14 @@ export default function Login({ setCurrentUser }) {
       password,
     };
 
-    fetch("", {
+    fetch("http://localhost:3000/login", {
       method: "POST",
       headers: { "Content-Type": "applicaton/json" },
       body: JSON.stringify(user),
     }).then((res) => {
       if (res.ok) {
         res.json().then(setCurrentUser);
+        console.log("success");
       } else {
         res.json().then((e) => setErrors(Object.entries(e.error).flat()));
       }
