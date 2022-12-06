@@ -13,20 +13,21 @@ import Login from "./pages/auth/login";
 import Collector from "./pages/collector/Collector";
 import Disposer from "./pages/disposer/Disposer";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 function App() {
   let [currentuser, setCurrentUser] = useState(null);
+  let navigate = useNavigate();
 
-  // useEffect(() => {
-  //   fetch("").then((res) => {
-  //     if (res.ok) {
-  //       res.json().then((user) => setCurrentUser(user));
-  //     }
-  //   });
-  // }, []);
+  useEffect(() => {
+    fetch("http://localhost:3000/me").then((res) => {
+      if (res.ok) {
+        res.json().then((user) => setCurrentUser(user));
+      }
+    });
+  }, []);
 
   // if (!currentuser) {
-  //   return <Login setCurrentUser={setCurrentUser} />;
   // }
   return (
     <BrowserRouter>
