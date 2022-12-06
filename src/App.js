@@ -17,24 +17,17 @@ import { redirect } from "react-router-dom";
 
 function App() {
   let [currentuser, setCurrentUser] = useState(null);
+  let [log, setLog] = useState(false);
 
-  // useEffect(() => {
-  //   fetch("http://localhost:3000/me").then((res) => {
-  //     if (res.ok) {
-  //       res.json().then((user) => setCurrentUser(user));
-  //     }
-  //   });
-  // }, []);
-
-  // if (!currentuser) {
-  //   redirect("/login");
-  // }
-
-  if (currentuser === null) {
-    console.log("no user");
-  } else {
-    console.log("Yes user", currentuser);
-  }
+  useEffect(() => {
+    fetch("http://localhost:3000/me").then((res) => {
+      if (res.ok) {
+        res.json().then((user) => {
+          setCurrentUser(user);
+        });
+      }
+    });
+  }, [currentuser]);
 
   return (
     <BrowserRouter>
@@ -46,7 +39,7 @@ function App() {
         {/* <Route path="/events" element={<Events />} /> */}
         <Route path="/process" element={<Process />} />
         {/* <Route path="/contact" element={<Contact />} /> */}
-        <Route path="/auth" element={<Auth />} />
+        <Route path="/auth" element={<Auth log={log} setLog={setLog} />} />
         <Route
           path="/login"
           element={<Login setCurrentUser={setCurrentUser} />}

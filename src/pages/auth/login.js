@@ -1,7 +1,7 @@
 import "./auth.css";
 import { useState, useEffect } from "react";
 
-export default function Login({ setCurrentUser }) {
+export default function Login({ setCurrentUser, onLogin }) {
   let [username, setUsername] = useState("");
   // let [email, setEmail] = useState("");
   let [login, setLogin] = useState("");
@@ -21,19 +21,22 @@ export default function Login({ setCurrentUser }) {
     }).then((r) => {
       setIsLoading(false);
       if (r.ok) {
-        r.json().then((user) => setCurrentUser(user));
+        r.json().then((user) => onLogin(user));
       } else {
         r.json().then((err) => setErrors(err.errors));
       }
     });
   }
 
+  alert(errors);
+
   return (
-    <main className="auth" onSubmit={handleSubmit}>
+    <main className="auth" onSubmit={handleSubmit} autocomplete="on">
       <form id="login">
         <span>Login</span>
         <input
           type="text"
+          autoComplete="on"
           required
           placeholder="Enter username"
           value={username}
@@ -51,6 +54,7 @@ export default function Login({ setCurrentUser }) {
           type="password"
           placeholder="Enter password"
           value={password}
+          autoComplete="on"
           required
           onChange={(e) => setPassword(e.target.value)}
         />

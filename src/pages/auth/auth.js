@@ -1,7 +1,9 @@
 import "./auth.css";
 import { useState, useEffect } from "react";
+import { redirect } from "react-router-dom";
+import Disposer from "../disposer/Disposer";
 
-export default function Auth() {
+export default function Auth({ setLog, log }) {
   let [username, setUsername] = useState("");
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
@@ -28,6 +30,7 @@ export default function Auth() {
       if (res.ok) {
         // res.json().then((user) => onLogin(user));
         console.log("success");
+        setLog(true);
       } else {
         res.json().then((err) => setErrors(err.errors));
       }
@@ -41,6 +44,7 @@ export default function Auth() {
         <input
           type="text"
           placeholder="Enter username"
+          autoComplete="on"
           required
           value={username}
           onChange={(e) => setUsername(e.target.value)}
@@ -49,12 +53,14 @@ export default function Auth() {
           type="email"
           placeholder="Enter email"
           required
+          autoComplete="on"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <input
           type="password"
           placeholder="Enter password"
+          autoComplete="on"
           required
           value={password}
           onChange={(e) => setPassword(e.target.value)}
@@ -63,6 +69,7 @@ export default function Auth() {
           type="password"
           placeholder="Confirm password"
           required
+          autoComplete="on"
           value={passwordConfirmation}
           onChange={(e) => setPasswordConfirmation(e.target.value)}
         />
