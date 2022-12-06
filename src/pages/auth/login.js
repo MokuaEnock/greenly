@@ -21,7 +21,7 @@ export default function Login({ setCurrentUser }) {
     }).then((r) => {
       setIsLoading(false);
       if (r.ok) {
-        r.json().then((user) => console.log("success", user));
+        r.json().then((user) => setCurrentUser(user));
       } else {
         r.json().then((err) => setErrors(err.errors));
       }

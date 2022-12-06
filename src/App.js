@@ -13,22 +13,29 @@ import Login from "./pages/auth/login";
 import Collector from "./pages/collector/Collector";
 import Disposer from "./pages/disposer/Disposer";
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { redirect } from "react-router-dom";
 
 function App() {
   let [currentuser, setCurrentUser] = useState(null);
-  let navigate = useNavigate();
 
-  useEffect(() => {
-    fetch("http://localhost:3000/me").then((res) => {
-      if (res.ok) {
-        res.json().then((user) => setCurrentUser(user));
-      }
-    });
-  }, []);
+  // useEffect(() => {
+  //   fetch("http://localhost:3000/me").then((res) => {
+  //     if (res.ok) {
+  //       res.json().then((user) => setCurrentUser(user));
+  //     }
+  //   });
+  // }, []);
 
   // if (!currentuser) {
+  //   redirect("/login");
   // }
+
+  if (currentuser === null) {
+    console.log("no user");
+  } else {
+    console.log("Yes user", currentuser);
+  }
+
   return (
     <BrowserRouter>
       <NavBar />
@@ -40,7 +47,10 @@ function App() {
         <Route path="/process" element={<Process />} />
         {/* <Route path="/contact" element={<Contact />} /> */}
         <Route path="/auth" element={<Auth />} />
-        <Route path="/login" element={<Login />} />
+        <Route
+          path="/login"
+          element={<Login setCurrentUser={setCurrentUser} />}
+        />
         <Route path="/collector" element={<Collector />} />
         <Route path="/disposer" element={<Disposer />} />
       </Routes>
