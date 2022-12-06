@@ -17,13 +17,13 @@ import { useState, useEffect } from "react";
 function App() {
   let [currentuser, setCurrentUser] = useState(null);
 
-  useEffect(() => {
-    fetch("").then((res) => {
-      if (res.ok) {
-        res.json().then((user) => setCurrentUser(user));
-      }
-    });
-  }, []);
+  // useEffect(() => {
+  //   fetch("").then((res) => {
+  //     if (res.ok) {
+  //       res.json().then((user) => setCurrentUser(user));
+  //     }
+  //   });
+  // }, []);
 
   // if (!currentuser) {
   //   return <Login setCurrentUser={setCurrentUser} />;

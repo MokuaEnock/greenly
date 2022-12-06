@@ -8,7 +8,31 @@ export default function Auth() {
   let [passwordConfirmation, setPasswordConfirmation] = useState("");
   const [errors, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    setIsLoading(true);
+    fetch("http://localhost:3000/signup", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        "username": username,
+        "email": email,
+        "password": password,
+        "passwordConfirmation": passwordConfirmation,
+      }),
+    }).then((res) => {
+      setIsLoading(false);
+      if (res.ok) {
+        // res.json().then((user) => onLogin(user));
+        console.log("success");
+      } else {
+        res.json().then((err) => setErrors(err.errors));
+      }
+    });
+  }
 
   return (
     <main className="auth">
@@ -43,7 +67,7 @@ export default function Auth() {
           onChange={(e) => setPasswordConfirmation(e.target.value)}
         />
         <button className="form-button-submit" type="submit">
-          Continue
+          {isLoading ? "Loading..." : "Sign Up"}
         </button>
       </form>
     </main>
