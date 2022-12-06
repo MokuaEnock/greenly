@@ -15,9 +15,19 @@ import Disposer from "./pages/disposer/Disposer";
 import { useState, useEffect } from "react";
 
 function App() {
-  let [user, setUser] = useState(null);
+  let [currentuser, setCurrentUser] = useState(null);
 
-  
+  useEffect(() => {
+    fetch("").then((res) => {
+      if (res.ok) {
+        res.json().then((user) => setCurrentUser(user));
+      }
+    });
+  }, []);
+
+  if (!currentuser) {
+    return <Login setCurrentUser={setCurrentUser} />;
+  }
   return (
     <BrowserRouter>
       <NavBar />
@@ -29,7 +39,7 @@ function App() {
         <Route path="/process" element={<Process />} />
         {/* <Route path="/contact" element={<Contact />} /> */}
         <Route path="/auth" element={<Auth />} />
-        <Route path="/login" element={<Login setUser={setUser} />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/collector" element={<Collector />} />
         <Route path="/disposer" element={<Disposer />} />
       </Routes>

@@ -1,7 +1,7 @@
 import "./auth.css";
 import { useState, useEffect } from "react";
 
-export default function Login({ setuser }) {
+export default function Login({ setCurrentUser }) {
   let [username, setUsername] = useState("");
   // let [email, setEmail] = useState("");
   let [login, setLogin] = useState("");
@@ -22,7 +22,7 @@ export default function Login({ setuser }) {
       body: JSON.stringify(user),
     }).then((res) => {
       if (res.ok) {
-        res.json().then(setuser);
+        res.json().then(setCurrentUser);
       } else {
         res.json().then((e) => setErrors(Object.entries(e.error).flat()));
       }
@@ -53,7 +53,6 @@ export default function Login({ setuser }) {
           placeholder="Enter password"
           value={password}
           required
-
           onChange={(e) => setPassword(e.target.value)}
         />
         <button className="form-button-submit" type="submit">
