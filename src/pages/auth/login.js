@@ -1,10 +1,10 @@
 import "./auth.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function Login({ setCurrentUser, onLogin }) {
   let [username, setUsername] = useState("");
   // let [email, setEmail] = useState("");
-  let [login, setLogin] = useState("");
+  // let [login, setLogin] = useState("");
   let [password, setPassword] = useState("");
   let [errors, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
