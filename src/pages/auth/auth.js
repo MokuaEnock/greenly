@@ -6,6 +6,7 @@ export default function Auth() {
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
   let [passwordConfirmation, setPasswordConfirmation] = useState("");
+  const [errors, setErrors] = useState([]);
 
   return (
     <main className="auth">
