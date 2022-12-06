@@ -12,11 +12,12 @@ import Auth from "./pages/auth/auth";
 import Login from "./pages/auth/login";
 import Collector from "./pages/collector/Collector";
 import Disposer from "./pages/disposer/Disposer";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   let [user, setUser] = useState(null);
 
+  
   return (
     <BrowserRouter>
       <NavBar />
