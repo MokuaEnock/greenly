@@ -11,10 +11,34 @@ export default function Auth() {
     <main className="auth">
       <form id="login">
         <span>Get Started</span>
-        <input type="text" placeholder="Enter username" required />
-        <input type="email" placeholder="Enter email" />
-        <input type="password" placeholder="Enter password" />
-        <input type="password" placeholder="Confirm password" />
+        <input
+          type="text"
+          placeholder="Enter username"
+          required
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
+        <input
+          type="email"
+          placeholder="Enter email"
+          required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <input
+          type="password"
+          placeholder="Enter password"
+          required
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <input
+          type="password"
+          placeholder="Confirm password"
+          required
+          value={passwordConfirmation}
+          onChange={(e) => setPasswordConfirmation(e.target.value)}
+        />
         <button className="form-button-submit" type="submit">
           Continue
         </button>
