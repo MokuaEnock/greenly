@@ -7,25 +7,23 @@ export default function Login({ setCurrentUser }) {
   let [login, setLogin] = useState("");
   let [password, setPassword] = useState("");
   let [errors, setErrors] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   function handleSubmit(e) {
     e.preventDefault();
-    let user = {
-      username,
-      // email,
-      password,
-    };
-
+    setIsLoading(true);
     fetch("http://localhost:3000/login", {
       method: "POST",
-      headers: { "Content-Type": "applicaton/json" },
-      body: JSON.stringify(user),
-    }).then((res) => {
-      if (res.ok) {
-        res.json().then(setCurrentUser);
-        console.log("success");
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ username, password }),
+    }).then((r) => {
+      setIsLoading(false);
+      if (r.ok) {
+        r.json().then((user) => console.log("success", user));
       } else {
-        res.json().then((e) => setErrors(Object.entries(e.error).flat()));
+        r.json().then((err) => setErrors(err.errors));
       }
     });
   }
@@ -57,7 +55,7 @@ export default function Login({ setCurrentUser }) {
           onChange={(e) => setPassword(e.target.value)}
         />
         <button className="form-button-submit" type="submit">
-          Continue
+          {isLoading ? "Log In" : "Login"}
         </button>
       </form>
     </main>

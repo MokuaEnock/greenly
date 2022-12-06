@@ -21,7 +21,7 @@ export default function Auth() {
         username: username,
         email: email,
         password: password,
-        passwordConfirmation: passwordConfirmation,
+        password_confirmation: passwordConfirmation,
       }),
     }).then((res) => {
       setIsLoading(false);
