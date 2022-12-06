@@ -18,10 +18,10 @@ export default function Auth() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        "username": username,
-        "email": email,
-        "password": password,
-        "passwordConfirmation": passwordConfirmation,
+        username: username,
+        email: email,
+        password: password,
+        passwordConfirmation: passwordConfirmation,
       }),
     }).then((res) => {
       setIsLoading(false);
@@ -36,7 +36,7 @@ export default function Auth() {
 
   return (
     <main className="auth">
-      <form id="login">
+      <form id="login" onSubmit={handleSubmit}>
         <span>Get Started</span>
         <input
           type="text"
