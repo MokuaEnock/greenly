@@ -1,9 +1,7 @@
 import "./auth.css";
-import { useState, useEffect } from "react";
-import { redirect } from "react-router-dom";
-import Disposer from "../disposer/Disposer";
+import { useState } from "react";
 
-export default function Auth({ setLog, log }) {
+export default function Auth({ setLog, log, onLogin }) {
   let [username, setUsername] = useState("");
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
@@ -28,11 +26,13 @@ export default function Auth({ setLog, log }) {
     }).then((res) => {
       setIsLoading(false);
       if (res.ok) {
-        // res.json().then((user) => onLogin(user));
-        console.log("success");
+        res.json().then((user) => onLogin(user));
         setLog(true);
       } else {
-        res.json().then((err) => setErrors(err.errors));
+        res.json().then((err) => {
+          setErrors(err.errors);
+          console.log(errors);
+        });
       }
     });
   }
