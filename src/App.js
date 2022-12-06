@@ -25,9 +25,9 @@ function App() {
     });
   }, []);
 
-  if (!currentuser) {
-    return <Login setCurrentUser={setCurrentUser} />;
-  }
+  // if (!currentuser) {
+  //   return <Login setCurrentUser={setCurrentUser} />;
+  // }
   return (
     <BrowserRouter>
       <NavBar />
