@@ -49,9 +49,6 @@ export default function DisposerHome({ user }) {
     }).then((res) => res.json());
   }
 
-  // function click() {
-  //   console.log("whattttt");
-  // }
   let orders = user.orders;
   let all_orders = orders.map((item) => {
     return (
@@ -93,7 +90,22 @@ export default function DisposerHome({ user }) {
     );
   });
 
-  console.log(item);
+  let item_view = [item].map((item, index) => {
+    return (
+      <div id="disposer-view" key={index}>
+        <span className="title">Here is your order {item.name}</span>
+        <span className="image"></span>
+        <span className="categories">
+          <span className="categ-attributes">{item.date}</span>
+          <span className="categ-attributes">{item.wastetype}</span>
+          <span className="categ-attributes">{item.location}</span>
+          <span className="categ-attributes">{item.weight}</span>
+        </span>
+        <span className="instructions">{item.instructions}</span>
+        <span className="points">Points earned: {item.weight * 10}</span>
+      </div>
+    );
+  });
 
   return (
     <main id="disposer-home">
@@ -230,17 +242,7 @@ export default function DisposerHome({ user }) {
       <section id="disposer-previous">
         <div id="disposer-list">{all_orders.reverse()}</div>
 
-        <div id="disposer-view">
-          <span className="title">Solid 354</span>
-          <span className="image"></span>
-          <span className="categories">
-            <span className="categ-attributes"></span>
-            <span className="categ-attributes"></span>
-            <span className="categ-attributes"></span>
-            <span className="categ-attributes"></span>
-          </span>
-          <span className="instructions"></span>
-        </div>
+        {item_view}
       </section>
     </main>
   );
