@@ -5,7 +5,20 @@ export default function DisposerHome() {
 
       <section id="disposer-stats">
         <div id="disposer-stats-title">
-          <span>Hello world</span>
+          <div>
+            <span>Total points earned</span>
+            <span>1000</span>
+          </div>
+
+          <div>
+            <span>Value of points in Ksh</span>
+            <span>50</span>
+          </div>
+
+          <div>
+            <span>Total weight of waste</span>
+            <span>220</span>
+          </div>
         </div>
         <div id="disposer-stats-stats">
           <span>Hello Enock</span>
@@ -18,7 +31,7 @@ export default function DisposerHome() {
           </div>
 
           <div>
-            <span>Total weight in Kgs</span>
+            <span>Total weight this week</span>
             <span>105</span>
           </div>
 
