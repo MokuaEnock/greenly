@@ -73,8 +73,8 @@ export default function DisposerHome() {
               type="text"
               autoComplete="on"
               required
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              value={location}
+              onChange={(e) => setLocation(e.target.value)}
             />
           </span>
 
@@ -84,8 +84,8 @@ export default function DisposerHome() {
               type="date"
               autoComplete="on"
               required
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              value={date}
+              onChange={(e) => setDate(e.target.value)}
             />
           </span>
 
@@ -97,8 +97,8 @@ export default function DisposerHome() {
               maximum="100"
               autoComplete="on"
               required
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              value={weight}
+              onChange={(e) => setWeight(e.target.value)}
             />
           </span>
 
@@ -108,8 +108,8 @@ export default function DisposerHome() {
               type="text"
               autoComplete="on"
               required
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              value={type}
+              onChange={(e) => setType(e.target.value)}
             />
           </span>
 
@@ -119,8 +119,8 @@ export default function DisposerHome() {
               type="email"
               autoComplete="on"
               required
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </span>
 
@@ -130,8 +130,8 @@ export default function DisposerHome() {
               type="text"
               autoComplete="on"
               required
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              value={instructions}
+              onChange={(e) => setInstructions(e.target.value)}
             />
           </span>
 
