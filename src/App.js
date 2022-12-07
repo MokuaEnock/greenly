@@ -10,10 +10,9 @@ import Process from "./pages/process/process";
 // import Contact from "./pages/contact/contact";
 import Auth from "./pages/auth/auth";
 import Login from "./pages/auth/login";
-import Collector from "./pages/collector/Collector";
+// import Collector from "./pages/collector/Collector";
 import Disposer from "./pages/disposer/Disposer";
 import { useState, useEffect } from "react";
-import { redirect } from "react-router-dom";
 
 function App() {
   let [user, setUser] = useState(null);
@@ -27,7 +26,6 @@ function App() {
     });
   }, []);
 
-  
   return (
     <BrowserRouter>
       <NavBar />
@@ -39,9 +37,9 @@ function App() {
         <Route path="/process" element={<Process />} />
         {/* <Route path="/contact" element={<Contact />} /> */}
         <Route path="/auth" element={<Auth log={log} setLog={setLog} />} />
-        <Route path="/login" element={<Login setCurrentUser={setUser} />} />
-        <Route path="/collector" element={<Collector />} />
-        <Route path="/disposer" element={<Disposer />} />
+        <Route path="/login" element={<Login onLogin={setUser} />} />
+        {/* <Route path="/collector" element={<Collector />} /> */}
+        <Route path="/disposer" element={<Disposer user={user} />} />
       </Routes>
       <Footer />
     </BrowserRouter>
