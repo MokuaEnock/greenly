@@ -1,4 +1,13 @@
+import { useState, useEffect } from "react";
+
 export default function DisposerHome() {
+  let [name, setName] = useState("");
+  let [location, setLocation] = useState("");
+  let [date, setDate] = useState("");
+  let [weight, setWeight] = useState("");
+  let [type, setType] = useState("");
+  let [email, setEmail] = useState("");
+  let [instructions, setInstructions] = useState("");
   return (
     <main id="disposer-home">
       <div id="disposer-home-title">Your Contributions</div>
