@@ -1,3 +1,4 @@
+import { click } from "@testing-library/user-event/dist/click";
 import { useState, useEffect } from "react";
 import Agric from "../images/agriculture.jpg";
 
@@ -10,6 +11,7 @@ export default function DisposerHome({ user }) {
   let [email, setEmail] = useState("");
   let [instructions, setInstructions] = useState("");
   let [isLoading, setIsLoading] = useState(false);
+  let [item, setItem] = useState([]);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -47,13 +49,17 @@ export default function DisposerHome({ user }) {
     }).then((res) => res.json());
   }
 
-  console.log("successsssss", user.orders);
-
+  // function click() {
+  //   console.log("whattttt");
+  // }
   let orders = user.orders;
-
   let all_orders = orders.map((item) => {
     return (
-      <div className="disposer-item" key={item.id}>
+      <div
+        className="disposer-item"
+        key={item.id}
+        onClick={() => setItem(item)}
+      >
         <div className="disposer-item-image"></div>
 
         <div className="disposer-item-info">
@@ -86,6 +92,8 @@ export default function DisposerHome({ user }) {
       </div>
     );
   });
+
+  console.log(item);
 
   return (
     <main id="disposer-home">
@@ -220,9 +228,7 @@ export default function DisposerHome({ user }) {
       <div id="disposer-home-title">Previous disposals</div>
 
       <section id="disposer-previous">
-        <div id="disposer-list">
-          {all_orders.reverse()}
-        </div>
+        <div id="disposer-list">{all_orders.reverse()}</div>
 
         <div id="disposer-view">
           <span className="title">Solid 354</span>
