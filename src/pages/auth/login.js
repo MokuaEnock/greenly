@@ -35,9 +35,6 @@ export default function Login({ onLogin, user }) {
     });
   }
 
-  /*  function red(e) {
-    redirect("/");
-  } */
 
   return (
     <main className="auth" onSubmit={handleSubmit}>
