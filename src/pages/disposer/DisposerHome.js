@@ -131,7 +131,7 @@ export default function DisposerHome({ user }) {
 
           <div>
             <span>Total weight of waste</span>
-            <span>{}</span>
+            <span>{points.reduce((a, b) => a + b, 0)}</span>
           </div>
         </div>
         <div id="disposer-stats-stats">
@@ -141,12 +141,12 @@ export default function DisposerHome({ user }) {
         <div id="disposer-stats-words">
           <div>
             <span>Collections this Month</span>
-            <span>5</span>
+            <span>{points.length}</span>
           </div>
 
           <div>
             <span>Total weight this week</span>
-            <span>105</span>
+            <span>{points.reduce((a, b) => a + b, 0)}</span>
           </div>
 
           <div>
