@@ -4,23 +4,14 @@ import DisposerProfile from "./DisposerProfile";
 import { Link } from "react-router-dom";
 export default function Disposer({ user }) {
   console.log(user);
-  function navi() {
-    if (user !== null) {
-      return <DisposerHome />;
-    } else {
-      return <DisposerProfile />;
-    }
-  }
 
-  function handleDelete() {
-
-  }
+  function handleDelete() {}
 
   function DisHome() {
     return (
       <>
         <div id="disposer-nav">
-          <button onClick={handleDelete}></button>
+          <button onClick={handleDelete}>LogOut</button>
         </div>
         <DisposerHome />
       </>
