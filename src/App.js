@@ -18,16 +18,16 @@ function App() {
   let [user, setUser] = useState(null);
   let [log, setLog] = useState(false);
 
-  useEffect(() => {
-    fetch("http://localhost:3000/me").then((res) => {
-      if (res.ok) {
-        res.json().then((user) => {
-          setUser(user);
-          console.log("success");
-        });
-      }
-    });
-  }, []);
+  // useEffect(() => {
+  //   fetch("http://localhost:3000/me").then((res) => {
+  //     if (res.ok) {
+  //       res.json().then((user) => {
+  //         setUser(user);
+  //         console.log("success");
+  //       });
+  //     }
+  //   });
+  // }, []);
 
   return (
     <BrowserRouter>

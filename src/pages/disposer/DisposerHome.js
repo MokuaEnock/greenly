@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router";
+import Agric from "../images/agriculture.jpg";
 
 export default function DisposerHome({ user }) {
   let [name, setName] = useState("");
@@ -10,8 +10,6 @@ export default function DisposerHome({ user }) {
   let [email, setEmail] = useState("");
   let [instructions, setInstructions] = useState("");
   let [isLoading, setIsLoading] = useState(false);
-  let history = useNavigate();
-  const [errors, setErrors] = useState([]);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -43,14 +41,22 @@ export default function DisposerHome({ user }) {
     });
   }
 
+  function handleDelete(product) {
+    fetch(`http://localhost:3000/products/${product.id}`, {
+      method: "DELETE",
+    }).then((res) => res.json());
+  }
+
   console.log("successsssss", user.orders);
 
   let orders = user.orders;
 
-   let all_orders = orders.map((item) => {
+  let all_orders = orders.map((item) => {
     return (
       <div className="disposer-item" key={item.id}>
-        <div className="disposer-item-image"></div>
+        <div className="disposer-item-image">
+          {/* <img src={Agric} alt="Agric" /> */}
+        </div>
 
         <div className="disposer-item-info">
           <div>
@@ -67,7 +73,17 @@ export default function DisposerHome({ user }) {
 
         <div className="disposer-item-add">
           <button className="update">Update</button>
-          <button className="delete">Delete</button>
+          <button
+            className="delete"
+            onClick={() => {
+              fetch(`http://localhost:3000/products/${item.id}`, {
+                method: "DELETE",
+                mode: "cors",
+              }).then((res) => res.json());
+            }}
+          >
+            Delete
+          </button>
         </div>
       </div>
     );
