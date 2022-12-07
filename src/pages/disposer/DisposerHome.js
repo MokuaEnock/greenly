@@ -1,14 +1,47 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router";
 
-export default function DisposerHome() {
+export default function DisposerHome({ user }) {
   let [name, setName] = useState("");
   let [location, setLocation] = useState("");
   let [date, setDate] = useState("");
   let [weight, setWeight] = useState("");
-  let [type, setType] = useState("");
+  let [wastetype, setWasteType] = useState("");
   let [email, setEmail] = useState("");
   let [instructions, setInstructions] = useState("");
+  let [isLoading, setIsLoading] = useState(false);
+  let history = useNavigate();
+  const [errors, setErrors] = useState([]);
 
+  function handleSubmit(e) {
+    e.preventDefault();
+    setIsLoading(true);
+    fetch("http://localhost:3000/orders", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        user_id:user.id,
+        name,
+        location,
+        date,
+        weight,
+        wastetype,
+        // email,
+        instructions,
+      }),
+    }).then((r) => {
+      setIsLoading(false);
+      if (r.ok) {
+        // history.push("/");
+        console.log("success", r);
+      } else {
+        // r.json().then((err) => setErrors(err.errors));
+        console.log("failed");
+      }
+    });
+  }
   return (
     <main id="disposer-home">
       <div id="disposer-home-title">Your Contributions</div>
@@ -55,7 +88,7 @@ export default function DisposerHome() {
       <div id="disposer-home-title">Request for a disposal</div>
 
       <section id="disposer-form">
-        <form>
+        <form onSubmit={handleSubmit}>
           <span>
             <label>Hello whats your name?</label>
             <input
@@ -108,8 +141,8 @@ export default function DisposerHome() {
               type="text"
               autoComplete="on"
               required
-              value={type}
-              onChange={(e) => setType(e.target.value)}
+              value={wastetype}
+              onChange={(e) => setWasteType(e.target.value)}
             />
           </span>
 

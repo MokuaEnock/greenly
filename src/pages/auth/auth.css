@@ -55,6 +55,26 @@
     font-size: 1.6vw;
 }
 
-/* background-color: #d8ffc0;
-color: #172E08;
- */
+.erro-cont{
+    width:100%;
+    height:20%;
+    background-color:white;
+    color:red;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .errors{
+    width:100%;
+    height:100%;
+    background-color:white;
+    color:red;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.8vw;
+ }

@@ -22,11 +22,11 @@ export default function Disposer({ user, setUser }) {
         <div id="disposer-nav">
           <button onClick={handleDelete}>LogOut</button>
         </div>
-        <DisposerHome />
+        <DisposerHome user={user} />
       </>
     );
   }
 
-  // return <>{user ? <DisHome /> : <DisposerProfile />}</>;
-  return <DisHome />;
+  return <>{user ? <DisHome /> : <DisposerProfile />}</>;
+  // return <DisHome />;
 }

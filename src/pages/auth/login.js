@@ -33,14 +33,14 @@ export default function Login({ onLogin, user }) {
     });
   }
 
-  function red(e) {
-    e.preventDefault();
-    if (user !== null) {
-      console.log("success", user);
-    } else {
-      console.log("ccess");
-    }
-  }
+  // function red(e) {
+  //   e.preventDefault();
+  //   if (user !== null) {
+  //     console.log("success", user);
+  //   } else {
+  //     console.log("ccess");
+  //   }
+  // }
 
   return (
     <main className="auth" onSubmit={handleSubmit}>
