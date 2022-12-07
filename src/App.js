@@ -42,7 +42,10 @@ function App() {
           element={<Login user={user} onLogin={setUser} />}
         />
         {/* <Route path="/collector" element={<Collector />} /> */}
-        <Route path="/disposer" element={<Disposer user={user} />} />
+        <Route
+          path="/disposer"
+          element={<Disposer user={user} onLogin={setUser} />}
+        />
       </Routes>
       <Footer />
     </BrowserRouter>
