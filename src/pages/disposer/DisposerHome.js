@@ -5,10 +5,28 @@ export default function DisposerHome() {
 
       <section id="disposer-stats">
         <div id="disposer-stats-title">
-          <span></span>
+          <span>Hello world</span>
         </div>
-        <div id="disposer-stats-stats"></div>
-        <div id="disposer-stats-words"></div>
+        <div id="disposer-stats-stats">
+          <span>Hello Enock</span>
+        </div>
+
+        <div id="disposer-stats-words">
+          <div>
+            <span>Collections this Month</span>
+            <span>5</span>
+          </div>
+
+          <div>
+            <span>Total weight in Kgs</span>
+            <span>105</span>
+          </div>
+
+          <div>
+            <span>Total waste category</span>
+            <span>Organic</span>
+          </div>
+        </div>
       </section>
 
       <div id="disposer-home-title">Request for a disposal</div>

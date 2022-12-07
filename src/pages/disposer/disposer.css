@@ -61,6 +61,8 @@
     font-weight: bold;
 }
 
+/* disposer stats ======================================================== */
+
 #disposer-stats {
     width: 100%;
     height: 25vw;
@@ -97,7 +99,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+#disposer-stats-words>*{
+    width:95%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size:2.0vw ;
+    background-color: #ffffff;
 }
 
 /* disposer form========================================================== */
