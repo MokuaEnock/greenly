@@ -1,7 +1,7 @@
 import "./auth.css";
 import { useState, useEffect } from "react";
-import Disposer from "../disposer/Disposer";
-import { redirect } from "react-router-dom";
+// import Disposer from "../disposer/Disposer";
+import { useNavigate } from "react-router-dom";
 
 export default function Login({ onLogin, user }) {
   let [username, setUsername] = useState("");
@@ -10,6 +10,7 @@ export default function Login({ onLogin, user }) {
   let [password, setPassword] = useState("");
   let [errors, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  let navigate = useNavigate();
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -25,6 +26,7 @@ export default function Login({ onLogin, user }) {
       if (r.ok) {
         r.json().then((user) => {
           onLogin(user);
+          navigate("/disposer");
           console.log("success", user);
         });
       } else {
@@ -33,14 +35,9 @@ export default function Login({ onLogin, user }) {
     });
   }
 
-  // function red(e) {
-  //   e.preventDefault();
-  //   if (user !== null) {
-  //     console.log("success", user);
-  //   } else {
-  //     console.log("ccess");
-  //   }
-  // }
+  /*  function red(e) {
+    redirect("/");
+  } */
 
   return (
     <main className="auth" onSubmit={handleSubmit}>

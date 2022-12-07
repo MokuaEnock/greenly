@@ -1,5 +1,6 @@
 import "./auth.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Auth({ setLog, log, onLogin }) {
   let [username, setUsername] = useState("");
@@ -9,6 +10,7 @@ export default function Auth({ setLog, log, onLogin }) {
   const [errors, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
+  let navigate = useNavigate();
   function handleSubmit(e) {
     e.preventDefault();
     setIsLoading(true);
@@ -26,7 +28,10 @@ export default function Auth({ setLog, log, onLogin }) {
     }).then((r) => {
       setIsLoading(false);
       if (r.ok) {
-        r.json().then((user) => onLogin(user));
+        r.json().then((user) => {
+          onLogin(user);
+          navigate("/disposer");
+        });
       } else {
         r.json().then((err) => {
           setErrors(err.errors);
@@ -72,6 +77,13 @@ export default function Auth({ setLog, log, onLogin }) {
           value={passwordConfirmation}
           onChange={(e) => setPasswordConfirmation(e.target.value)}
         />
+
+        <span className="error-cont">
+          {errors.map((error) => {
+            return <p className="errors">{error}</p>;
+          })}
+        </span>
+        
         <button className="form-button-submit" type="submit">
           {isLoading ? "Loading..." : "Sign Up"}
         </button>
