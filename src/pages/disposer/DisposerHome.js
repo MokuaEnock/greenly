@@ -54,8 +54,7 @@ export default function DisposerHome({ user }) {
   let all_orders = orders.map((item) => {
     return (
       <div className="disposer-item" key={item.id}>
-        <div className="disposer-item-image">
-        </div>
+        <div className="disposer-item-image"></div>
 
         <div className="disposer-item-info">
           <div>
@@ -222,117 +221,7 @@ export default function DisposerHome({ user }) {
 
       <section id="disposer-previous">
         <div id="disposer-list">
-          {/* <div className="disposer-item">
-            <div className="disposer-item-image"></div>
-
-            <div className="disposer-item-info">
-              <div>
-                <span>Type</span>
-                <span>Location</span>
-              </div>
-
-              <div id="additional-info">
-                <span>Weight</span>
-                <span>12/03/2022</span>
-                <span>Order Id</span>
-              </div>
-            </div>
-
-            <div className="disposer-item-add">
-              <button className="update">Update</button>
-              <button className="delete">Delete</button>
-            </div>
-          </div>
-
-          <div className="disposer-item">
-            <div className="disposer-item-image"></div>
-
-            <div className="disposer-item-info">
-              <div>
-                <span>Type</span>
-                <span>Location</span>
-              </div>
-
-              <div id="additional-info">
-                <span>Weight</span>
-                <span>12/03/2022</span>
-                <span>Order Id</span>
-              </div>
-            </div>
-
-            <div className="disposer-item-add">
-              <button className="update">Update</button>
-              <button className="delete">Delete</button>
-            </div>
-          </div>
-
-          <div className="disposer-item">
-            <div className="disposer-item-image"></div>
-
-            <div className="disposer-item-info">
-              <div>
-                <span>Type</span>
-                <span>Location</span>
-              </div>
-
-              <div id="additional-info">
-                <span>Weight</span>
-                <span>12/03/2022</span>
-                <span>Order Id</span>
-              </div>
-            </div>
-
-            <div className="disposer-item-add">
-              <button className="update">Update</button>
-              <button className="delete">Delete</button>
-            </div>
-          </div>
-
-          <div className="disposer-item">
-            <div className="disposer-item-image"></div>
-
-            <div className="disposer-item-info">
-              <div>
-                <span>Type</span>
-                <span>Location</span>
-              </div>
-
-              <div id="additional-info">
-                <span>Weight</span>
-                <span>12/03/2022</span>
-                <span>Order Id</span>
-              </div>
-            </div>
-
-            <div className="disposer-item-add">
-              <button className="update">Update</button>
-              <button className="delete">Delete</button>
-            </div>
-          </div>
-
-          <div className="disposer-item">
-            <div className="disposer-item-image"></div>
-
-            <div className="disposer-item-info">
-              <div>
-                <span>Type</span>
-                <span>Location</span>
-              </div>
-
-              <div id="additional-info">
-                <span>Weight</span>
-                <span>12/03/2022</span>
-                <span>Order Id</span>
-              </div>
-            </div>
-
-            <div className="disposer-item-add">
-              <button className="update">Update</button>
-              <button className="delete">Delete</button>
-            </div>
-          </div> */}
-
-          {all_orders}
+          {all_orders.reverse()}
         </div>
 
         <div id="disposer-view">
