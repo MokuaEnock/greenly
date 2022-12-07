@@ -43,11 +43,11 @@ export default function DisposerHome({ user }) {
     });
   }
 
-  function handleDelete(product) {
-    fetch(`http://localhost:3000/products/${product.id}`, {
-      method: "DELETE",
-    }).then((res) => res.json());
-  }
+  // function handleDelete(product) {
+  //   fetch(`http://localhost:3000/products/${product.id}`, {
+  //     method: "DELETE",
+  //   }).then((res) => res.json());
+  // }
 
   let orders = user.orders;
   let all_orders = orders.map((item) => {
@@ -107,6 +107,12 @@ export default function DisposerHome({ user }) {
     );
   });
 
+  let points = orders.map((item) => {
+    return item.weight;
+  });
+
+  console.log(points);
+
   return (
     <main id="disposer-home">
       <div id="disposer-home-title">Your Contributions</div>
@@ -115,17 +121,17 @@ export default function DisposerHome({ user }) {
         <div id="disposer-stats-title">
           <div>
             <span>Total points earned</span>
-            <span>1000</span>
+            <span>{points * 10}</span>
           </div>
 
           <div>
             <span>Value of points in Ksh</span>
-            <span>50</span>
+            <span>{(points * 10) / 0.3}</span>
           </div>
 
           <div>
             <span>Total weight of waste</span>
-            <span>220</span>
+            <span>{}</span>
           </div>
         </div>
         <div id="disposer-stats-stats">
