@@ -8,6 +8,7 @@ export default function DisposerHome() {
   let [type, setType] = useState("");
   let [email, setEmail] = useState("");
   let [instructions, setInstructions] = useState("");
+
   return (
     <main id="disposer-home">
       <div id="disposer-home-title">Your Contributions</div>
@@ -57,37 +58,81 @@ export default function DisposerHome() {
         <form>
           <span>
             <label>Hello whats your name?</label>
-            <input type="text" />
+            <input
+              type="text"
+              autoComplete="on"
+              required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
           </span>
 
           <span>
             <label>Location for the waste collection?</label>
-            <input type="text" />
+            <input
+              type="text"
+              autoComplete="on"
+              required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
           </span>
 
           <span>
             <label>Waste collection date?</label>
-            <input type="date" />
+            <input
+              type="date"
+              autoComplete="on"
+              required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
           </span>
 
           <span>
             <label>The weight of the waste?</label>
-            <input type="number" minimum="1" maximum="100" />
+            <input
+              type="number"
+              minimum="1"
+              maximum="100"
+              autoComplete="on"
+              required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
           </span>
 
           <span>
             <label>Type of waste?</label>
-            <input type="text" />
+            <input
+              type="text"
+              autoComplete="on"
+              required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
           </span>
 
           <span>
             <label>Your E-mail?</label>
-            <input type="email" />
+            <input
+              type="email"
+              autoComplete="on"
+              required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
           </span>
 
           <span>
             <label>Any additional instructions?</label>
-            <input type="text" />
+            <input
+              type="text"
+              autoComplete="on"
+              required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
           </span>
 
           <button type="submit">Place order</button>
