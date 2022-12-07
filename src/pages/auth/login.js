@@ -43,7 +43,7 @@ export default function Login({ onLogin, user }) {
   }
 
   return (
-    <main className="auth" onSubmit={red}>
+    <main className="auth" onSubmit={handleSubmit}>
       <form id="login">
         <span>Login</span>
         <input
