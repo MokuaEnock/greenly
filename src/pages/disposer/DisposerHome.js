@@ -9,7 +9,6 @@ export default function DisposerHome({ user }) {
   let [wastetype, setWasteType] = useState("");
   let [email, setEmail] = useState("");
   let [instructions, setInstructions] = useState("");
-  let [orders, setOrders] = useState([]);
   let [isLoading, setIsLoading] = useState(false);
   let history = useNavigate();
   const [errors, setErrors] = useState([]);
@@ -44,17 +43,11 @@ export default function DisposerHome({ user }) {
     });
   }
 
-  useEffect(() => {
-    fetch(`http://localhost:3000/orders/${user.id}`)
-      .then((res) => res.json())
-      .then((res) => {
-        setOrders(res);
-      });
-  }, [user.id]);
+  console.log("successsssss", user.orders);
 
-  console.log("successsssss", orders);
+  let orders = user.orders;
 
- /*  let all_orders = orders.map((item) => {
+   let all_orders = orders.map((item) => {
     return (
       <div className="disposer-item" key={item.id}>
         <div className="disposer-item-image"></div>
@@ -78,7 +71,7 @@ export default function DisposerHome({ user }) {
         </div>
       </div>
     );
-  }); */
+  });
 
   return (
     <main id="disposer-home">
@@ -324,7 +317,7 @@ export default function DisposerHome({ user }) {
             </div>
           </div> */}
 
-          {/* {all_orders} */}
+          {all_orders}
         </div>
 
         <div id="disposer-view">
