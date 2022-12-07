@@ -9,6 +9,7 @@ export default function DisposerHome({ user }) {
   let [wastetype, setWasteType] = useState("");
   let [email, setEmail] = useState("");
   let [instructions, setInstructions] = useState("");
+  let [orders, setOrders] = useState([]);
   let [isLoading, setIsLoading] = useState(false);
   let history = useNavigate();
   const [errors, setErrors] = useState([]);
@@ -22,7 +23,7 @@ export default function DisposerHome({ user }) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        user_id:user.id,
+        user_id: user.id,
         name,
         location,
         date,
@@ -42,6 +43,17 @@ export default function DisposerHome({ user }) {
       }
     });
   }
+
+  useEffect(() => {
+    fetch(`http://localhost:3000/orders/${user.id}`)
+      .then((res) => res.json())
+      .then((res) => {
+        setOrders(res);
+      });
+  }, [user.id]);
+
+  console.log("successsssss", orders);
+
   return (
     <main id="disposer-home">
       <div id="disposer-home-title">Your Contributions</div>
@@ -197,6 +209,7 @@ export default function DisposerHome({ user }) {
               <button className="delete">Delete</button>
             </div>
           </div>
+
           <div className="disposer-item">
             <div className="disposer-item-image"></div>
 
@@ -218,6 +231,7 @@ export default function DisposerHome({ user }) {
               <button className="delete">Delete</button>
             </div>
           </div>
+
           <div className="disposer-item">
             <div className="disposer-item-image"></div>
 
@@ -239,6 +253,7 @@ export default function DisposerHome({ user }) {
               <button className="delete">Delete</button>
             </div>
           </div>
+
           <div className="disposer-item">
             <div className="disposer-item-image"></div>
 
@@ -260,6 +275,7 @@ export default function DisposerHome({ user }) {
               <button className="delete">Delete</button>
             </div>
           </div>
+
           <div className="disposer-item">
             <div className="disposer-item-image"></div>
 
