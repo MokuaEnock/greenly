@@ -55,19 +55,18 @@ export default function DisposerHome({ user }) {
     return (
       <div className="disposer-item" key={item.id}>
         <div className="disposer-item-image">
-          {/* <img src={Agric} alt="Agric" /> */}
         </div>
 
         <div className="disposer-item-info">
           <div>
-            <span>{item.wastetype}</span>
-            <span>{item.location}</span>
+            <span>Type: {item.wastetype}</span>
+            <span>Location: {item.location}</span>
           </div>
 
           <div id="additional-info">
-            <span>{item.weight}</span>
-            <span>{item.date}</span>
-            <span>{item.id}</span>
+            <span>Weight: {item.weight}</span>
+            <span>Date: {item.date}</span>
+            <span>Id: {item.id}</span>
           </div>
         </div>
 

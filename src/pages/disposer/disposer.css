@@ -274,9 +274,11 @@
     padding-left: .7vw;
     padding-right: .7vw;
     border-radius: .2vw;
+    font-size:1.3vw;
     height: 70%;
-    background-color: #172e08;
-    color: #ffffff;
+    /* background-color: #172e08; */
+    color: #172e08;
+    /* border:thin solid #172e08; */
 }
 
 #additional-info{
