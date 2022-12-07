@@ -23,13 +23,12 @@ export default function Auth({ setLog, log, onLogin }) {
         password: password,
         password_confirmation: passwordConfirmation,
       }),
-    }).then((res) => {
+    }).then((r) => {
       setIsLoading(false);
-      if (res.ok) {
-        res.json().then((user) => onLogin(user));
-        setLog(true);
+      if (r.ok) {
+        r.json().then((user) => onLogin(user));
       } else {
-        res.json().then((err) => {
+        r.json().then((err) => {
           setErrors(err.errors);
           console.log(errors);
         });

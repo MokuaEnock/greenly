@@ -15,6 +15,10 @@ body {
   color: #172E08;
 }
 
+button{
+  cursor:pointer;
+}
+
 #root {
   width: 90%;
   border: thin solid black;

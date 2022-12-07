@@ -19,15 +19,25 @@ function App() {
   let [currentuser, setCurrentUser] = useState(null);
   let [log, setLog] = useState(false);
 
-  useEffect(() => {
-    fetch("http://localhost:3000/me").then((res) => {
-      if (res.ok) {
-        res.json().then((user) => {
-          setCurrentUser(user);
-        });
+  // useEffect(() => {
+  //   fetch("http://localhost:3000/me").then((res) => {
+  //     if (res.ok) {
+  //       res.json().then((user) => {
+  //         setCurrentUser(user);
+  //       });
+  //     }
+  //   });
+  // }, [currentuser]);
+
+ /*  useEffect(() => {
+    fetch("/me").then((r) => {
+      if (r.ok) {
+        r.json().then((user) => setCurrentUser(user));
       }
     });
-  }, [currentuser]);
+  }, []); */
+
+  // if (!currentuser) return <Login onLogin={setCurrentUser} />;
 
   return (
     <BrowserRouter>

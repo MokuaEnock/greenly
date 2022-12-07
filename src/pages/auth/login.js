@@ -1,13 +1,16 @@
 import "./auth.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Disposer from "../disposer/Disposer";
+import { redirect } from "react-router-dom";
 
-export default function Login({ setCurrentUser, onLogin }) {
+export default function Login({ onLogin }) {
   let [username, setUsername] = useState("");
   // let [email, setEmail] = useState("");
   // let [login, setLogin] = useState("");
   let [password, setPassword] = useState("");
   let [errors, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  let [currentuser, setCurrentUser] = useState(null);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -28,10 +31,8 @@ export default function Login({ setCurrentUser, onLogin }) {
     });
   }
 
-  alert(errors);
-
   return (
-    <main className="auth" onSubmit={handleSubmit} autocomplete="on">
+    <main className="auth" onSubmit={handleSubmit}>
       <form id="login">
         <span>Login</span>
         <input
