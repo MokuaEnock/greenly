@@ -37,7 +37,10 @@ function App() {
         <Route path="/process" element={<Process />} />
         {/* <Route path="/contact" element={<Contact />} /> */}
         <Route path="/auth" element={<Auth log={log} setLog={setLog} />} />
-        <Route path="/login" element={<Login onLogin={setUser} />} />
+        <Route
+          path="/login"
+          element={<Login user={user} onLogin={setUser} />}
+        />
         {/* <Route path="/collector" element={<Collector />} /> */}
         <Route path="/disposer" element={<Disposer user={user} />} />
       </Routes>
