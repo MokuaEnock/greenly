@@ -11,16 +11,21 @@ export default function Disposer({ user }) {
       return <DisposerProfile />;
     }
   }
-  // return (
-  //   <main id="disposer">
-  //     <div id="disposer-nav">
-  //       <Link to="#disposer-home">Home</Link>
-  //       <Link to="#disposer-profile">Profile</Link>
-  //     </div>
 
-  //     <DisposerHome />
-  //   </main>
-  // );
+  function handleDelete() {
 
-  return <>{user ? <DisposerHome /> : <DisposerProfile />}</>;
+  }
+
+  function DisHome() {
+    return (
+      <>
+        <div id="disposer-nav">
+          <button onClick={handleDelete}></button>
+        </div>
+        <DisposerHome />
+      </>
+    );
+  }
+
+  return <>{user ? <DisHome /> : <DisposerProfile />}</>;
 }
