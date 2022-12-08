@@ -28,5 +28,5 @@ export default function Disposer({ user, setUser }) {
   }
 
   return <>{user ? <DisHome /> : <DisposerProfile />}</>;
-  // return <DisHome />;
+  return <>{user ? <DisHome /> : <DisHome />}</>;
 }

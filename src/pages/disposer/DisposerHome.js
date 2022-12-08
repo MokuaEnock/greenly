@@ -113,7 +113,7 @@ export default function DisposerHome({ user }) {
 
   return (
     <main id="disposer-home">
-      <div id="disposer-home-title">Your Contributions</div>
+      {/* <div id="disposer-home-title">Your Contributions</div> */}
 
       <section id="disposer-stats">
         <div id="disposer-stats-title">
@@ -152,6 +152,96 @@ export default function DisposerHome({ user }) {
             <span>Organic</span>
           </div>
         </div>
+      </section>
+
+      <section id="user-form">
+        <form>
+          <div id="user-form-title">Place Your order</div>
+          <div id="user-form-cont">
+            <div id="user-form-icons"></div>
+            <div id="user-form-inputs">
+              <span>
+                <label>Hello whats your name?</label>
+                <input
+                  type="text"
+                  autoComplete="on"
+                  required
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+              </span>
+
+              <span>
+                <label>Location for the waste collection?</label>
+                <input
+                  type="text"
+                  autoComplete="on"
+                  required
+                  value={location}
+                  onChange={(e) => setLocation(e.target.value)}
+                />
+              </span>
+
+              <span>
+                <label>Waste collection date?</label>
+                <input
+                  type="date"
+                  autoComplete="on"
+                  required
+                  value={date}
+                  onChange={(e) => setDate(e.target.value)}
+                />
+              </span>
+
+              <span>
+                <label>The weight of the waste?</label>
+                <input
+                  type="number"
+                  minimum="1"
+                  maximum="100"
+                  autoComplete="on"
+                  required
+                  value={weight}
+                  onChange={(e) => setWeight(e.target.value)}
+                />
+              </span>
+
+              <span>
+                <label>Type of waste?</label>
+                <input
+                  type="text"
+                  autoComplete="on"
+                  required
+                  value={wastetype}
+                  onChange={(e) => setWasteType(e.target.value)}
+                />
+              </span>
+
+              <span>
+                <label>Your E-mail?</label>
+                <input
+                  type="email"
+                  autoComplete="on"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </span>
+
+              <span>
+                <label>Any additional instructions?</label>
+                <input
+                  type="text"
+                  autoComplete="on"
+                  required
+                  value={instructions}
+                  onChange={(e) => setInstructions(e.target.value)}
+                />
+              </span>
+            </div>
+            <div id="user-form-image"></div>
+          </div>
+        </form>
       </section>
 
       <div id="disposer-home-title">Request for a disposal</div>
