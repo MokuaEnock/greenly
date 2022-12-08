@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+<h1 align="center" style="display: block; font-size: 2.5em; font-weight: bold; margin-block-start: 1em; margin-block-end: 1em;">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a name="logo" href="https://www.aregtech.com"><img align="center" src="./src/components/assets/Screenshot from 2022-10-07 11-42-05.png" alt="NxT learn" style="width:100%;height:100%"/></a>
+<br><br><strong>Okoa Waste</strong>
 
-## Available Scripts
+</h1>
 
-In the project directory, you can run:
+---
 
-### `npm start`
+![Viewers](https://gpvc.arturio.dev/MokuaEnock)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Introduction[![](./docs/img/pin.svg)](#introduction)
 
-### `npm test`
+The root cause of waste management in Nairobi is how the waste is collected, and setting up proper
+waste collection mechanisms. Setting up a common platform for waste collectors and waste
+producers such as households and mini industries such as schools will be the proper way to go.
+Having the collectors and distributors under one roof will eliminate the challenge of heaping the data
+on the roadside until the county government or private collectors come to collect the waste.
+Modern problems require modern solutions. Creating a platform that connects both the waste collector and the waste disposer is essential to get rid of this challenge. Okoa waste will be able to allow a user to create a waste collection order which will trigger a waste collector to be assigned to them.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**[Okoa Waste](greenly.vercel.app/)** is an open source waste management platform that allows users to order waste collection from the company
 
-### `npm run build`
+Have a look at the official [Okoa Waste](greenly.vercel.app/) for a comprehensive list of Sulu's features, core values and use cases.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+If you want to join the Okoa waste as a disposer you can join us **[here.](nxt-learn.vercel.app)**.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Motivation[![](./docs/img/pin.svg)](#motivation)
 
-### `npm run eject`
+Solid waste collection in Nairobi is conducted on two levels:
+**County government** - The Nairobi county government is responsible for collecting waste from
+public locations such as markets, streets, and roads, and any other public space such as stadiums.
+They are conducted at the expense of the taxpayer.
+**Private collectors** - These individuals and organizations collect waste from individual households
+that conduct business with them and small-scale industries such as schools and dispensaries, their
+services are conducted at a fee.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The existing waste collection methods used by waste collectors and waste collection companies largely depend on the presence of the waste disposer and waste collector, if one of the parties is not available during the waste collection exercise that is set on specific days of the week then the waste is not collected and can end up being piled in the bin.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 👨‍💻 Tech stack
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Here's a brief high-level overview of the tech stack the NxT project uses:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- This project uses **[Raect Js](https://reactjs.org/)** as the frontend framework.
+- The styling of the project has been done using custom pure CSS3 and it is encouraged for any future contribution this will be the default styling language.
+- The web application uses rails as a backend.
+- 🚨 Currently, the app is still in development and more features will be added in the coming week.
+- The app uses the font ["Chakra Petch"](https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap) as its main font, and the design of the app adheres to the material design guidelines.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🎨 Features
 
-### Analyzing the Bundle Size
+- A user can create and log in to their account.
+- A user can create a waste collection order.
+- A user can update an existing waste collection order.
+- A user can delete a waste collection order.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🌏 Browser Support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+| <img src="https://user-images.githubusercontent.com/1215767/34348387-a2e64588-ea4d-11e7-8267-a43365103afe.png" alt="Chrome" width="16px" height="16px" /> Chrome | <img src="https://user-images.githubusercontent.com/1215767/34348590-250b3ca2-ea4f-11e7-9efb-da953359321f.png" alt="IE" width="16px" height="16px" /> Internet Explorer | <img src="https://user-images.githubusercontent.com/1215767/34348380-93e77ae8-ea4d-11e7-8696-9a989ddbbbf5.png" alt="Edge" width="16px" height="16px" /> Edge | <img src="https://user-images.githubusercontent.com/1215767/34348394-a981f892-ea4d-11e7-9156-d128d58386b9.png" alt="Safari" width="16px" height="16px" /> Safari | <img src="https://user-images.githubusercontent.com/1215767/34348383-9e7ed492-ea4d-11e7-910c-03b39d52f496.png" alt="Firefox" width="16px" height="16px" /> Firefox |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|                                                                               Yes                                                                                |                                                                                   11+                                                                                   |                                                                             Yes                                                                              |                                                                               Yes                                                                                |                                                                                Yes                                                                                 |
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Future work
 
-### Deployment
+- Create user roles.
+- Auto increment points for users.
+- Expand the database
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+# ✍️ Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Interested in contributing to te Okoa waste project? Thanks so much for your interest! We are always looking for improvements to the project and contributions from open-source developers are greatly appreciated.
+
+---
+
+# 🌟 Spread the word
+
+If you want to say thank you and/or support the active development of the Well app:
+
+- Add a GitHub Star to the project!
+- Tweet about the project on your Twitter!
+  - Tag [@254_enok\_](https://twitter.com/254_enok_) and/or `#NxTLearn`
+
+---
+
+## Licensing[![](./docs/img/pin.svg)](#licensing)
+
+The Okoa waste is an open-source platform and everyone can learn and contribute to its development, it is licensed under the GNU General Public License v3.0. All designs were created by [Enock Mokua](https://github.com/MokuaEnock) and distributed under a Creative Commons license (CC BY-SA 4.0 International).
+
+<p align="center">
+    <a href="LICENSE" target="_blank">
+        <img src="https://img.shields.io/github/license/sulu/sulu.svg" alt="GitHub license">
+    </a>
+</p>
