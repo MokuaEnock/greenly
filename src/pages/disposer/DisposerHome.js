@@ -11,6 +11,7 @@ export default function DisposerHome({ user }) {
   let [email, setEmail] = useState("");
   let [instructions, setInstructions] = useState("");
   let [isLoading, setIsLoading] = useState(false);
+  let [errors, setErrors] = useState([]);
   let [item, setItem] = useState([]);
 
   function handleSubmit(e) {
@@ -37,8 +38,7 @@ export default function DisposerHome({ user }) {
         // history.push("/");
         console.log("success", r);
       } else {
-        // r.json().then((err) => setErrors(err.errors));
-        console.log("failed");
+        r.json().then((err) => setErrors(err.errors));
       }
     });
   }
@@ -110,8 +110,6 @@ export default function DisposerHome({ user }) {
   let points = orders.map((item) => {
     return item.weight;
   });
-
-  console.log(points);
 
   return (
     <main id="disposer-home">
@@ -237,6 +235,12 @@ export default function DisposerHome({ user }) {
               value={instructions}
               onChange={(e) => setInstructions(e.target.value)}
             />
+          </span>
+
+          <span className="error-cont">
+            {errors.map((error) => {
+              return <p className="errors">{error}</p>;
+            })}
           </span>
 
           <button type="submit">Place order</button>

@@ -1,7 +1,7 @@
-<h1 align="center" style="display: block; font-size: 2.5em; font-weight: bold; margin-block-start: 1em; margin-block-end: 1em;">
+<h1 align="center" style="display: block; font-size: 4em; font-weight: bold; margin-block-start: 1em; margin-block-end: 1em;">
 
-<a name="logo" href="https://www.aregtech.com"><img align="center" src="./src/components/assets/Screenshot from 2022-10-07 11-42-05.png" alt="NxT learn" style="width:100%;height:100%"/></a>
-<br><br><strong>Okoa Waste</strong>
+
+Okoa Waste
 
 </h1>
 
