@@ -238,6 +238,9 @@ export default function DisposerHome({ user }) {
                   onChange={(e) => setInstructions(e.target.value)}
                 />
               </span>
+              <p className="error"></p>
+
+              <button type="submit">Order</button>
             </div>
             <div id="user-form-image"></div>
           </div>
