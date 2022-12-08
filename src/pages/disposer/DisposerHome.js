@@ -172,7 +172,7 @@ export default function DisposerHome({ user }) {
               </span>
 
               <span>
-                <label>Location for the waste collection?</label>
+                <label>Location for collection?</label>
                 <input
                   type="text"
                   autoComplete="on"
@@ -218,17 +218,6 @@ export default function DisposerHome({ user }) {
               </span>
 
               <span>
-                <label>Your E-mail?</label>
-                <input
-                  type="email"
-                  autoComplete="on"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </span>
-
-              <span>
                 <label>Any additional instructions?</label>
                 <input
                   type="text"
@@ -242,7 +231,9 @@ export default function DisposerHome({ user }) {
 
               <button type="submit">Order</button>
             </div>
-            <div id="user-form-image"></div>
+            <div id="user-form-image">
+              <span></span>
+            </div>
           </div>
         </form>
       </section>

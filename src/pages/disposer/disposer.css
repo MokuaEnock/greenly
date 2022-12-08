@@ -86,7 +86,6 @@
 #user-form-title {
     width: 100%;
     height: 12%;
-    border: thin solid white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,7 +95,6 @@
 #user-form-cont {
     width: 100%;
     height: 88%;
-    border: thin solid white;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -105,9 +103,12 @@
 
 #user-form-icons {
     width: 10%;
-    height: 100%;
+    height: 90%;
+    margin-top: -2vw;
     font-size: 1.3vw;
-    border: thin solid white;
+    /* border: double .3vw #d8ffc0; */
+    border-bottom-right-radius: 2vw;
+    border-top-right-radius: 2vw;
 }
 
 #user-form-inputs {
@@ -118,14 +119,12 @@
     justify-content: space-between;
     width: 50%;
     height: 100%;
-    border: thin solid white;
 }
 
 #user-form-inputs>span {
     font-size: 1.3vw;
     width: 95%;
     height: 10%;
-    border: thin solid white;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -133,11 +132,20 @@
 }
 
 #user-form-inputs>span>input{
-    width: 40%;
+    width: 50%;
     font-size: 1.1vw;
+    color: #172e08;
+    border: thin solid #172e08;
+text-align: center;
     font-weight: lighter;
-    height: 50%;
+    height: 60%;
+    border-radius: .5vw;
 }
+
+#user-form-inputs>span>input:focus{
+    outline: thin solid #172e08;
+}
+
 
 #user-form-inputs>span>label{
     font-size: 1.3vw;
@@ -157,8 +165,24 @@
 #user-form-image {
     width: 40%;
     height: 100%;
-    border: thin solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
+
+#user-form-image>span {
+    width: 100%;
+    height: 90%;
+    background-color: #d8ffc0;
+    border-top-left-radius:30vw ;
+    border-top-right-radius: 30vw;
+    border-bottom-left-radius: 30vw;
+    background-image: url("../images/Africa.jpg");
+    background-position: center;
+    background-size: contain;
+}
+
 
 /* disposer stats ======================================================== */
 
