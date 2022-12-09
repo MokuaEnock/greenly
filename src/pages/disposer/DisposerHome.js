@@ -234,7 +234,7 @@ export default function DisposerHome({ user }) {
       <div id="disposer-home-title">Previous disposals</div>
 
       <section id="disposer-previous">
-        <div id="disposer-list">{all_orders.reverse()}</div>
+        <div id="disposer-list"></div>
         {item_view}
       </section>
     </main>
