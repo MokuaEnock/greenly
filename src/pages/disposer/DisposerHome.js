@@ -234,7 +234,27 @@ export default function DisposerHome({ user }) {
       <div id="disposer-home-title">Previous disposals</div>
 
       <section id="disposer-previous">
-        <div id="disposer-list"></div>
+        <div id="disposer-list">
+          <div id="disposer-item">
+            <span className="item-image">
+              <img src={Agric} alt="dispose" />
+            </span>
+            <span className="item-info">
+              <button>Location</button>
+              <button>Organic</button>
+            </span>
+            <span className="item-insts">instructions</span>
+            <span className="item-buts">
+              <button>45 kgs</button>
+              <button>12/03/2022</button>
+            </span>
+          </div>
+          <div id="disposer-item"></div>
+          <div id="disposer-item"></div>
+          <div id="disposer-item"></div>
+          <div id="disposer-item"></div>
+          <div id="disposer-item"></div>
+        </div>
         {item_view}
       </section>
     </main>

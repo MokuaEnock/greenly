@@ -258,7 +258,7 @@
 #disposer-previous {
   width: 100%;
   margin-top: -0.5vw;
-  height: 60vw;
+  height: 45vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -266,16 +266,87 @@
 }
 
 #disposer-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
   width: 65%;
   background-color: white;
   height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
+#disposer-item {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 1vw;
+  color: #172e08;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  height: 20vw;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
 
+#disposer-item > * {
+  width: 95%;
+  border: thin solid;
+  border-radius: inherit;
+}
+
+.item-image {
+  height: 50%;
+}
+.item-image > img {
+  width: 100%;
+  height: 100%;
+}
+
+.item-info {
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-info > button {
+  border: thin solid #172e08;
+  background-color: transparent;
+  color: #172e08;
+  font-size: 1.3vw;
+  height: 90%;
+  width: 45%;
+}
+.item-insts {
+  height: 20%;
+  font-size: 1.2vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.item-buts {
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-buts > * {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: thin solid #172e08;
+  background-color: transparent;
+  color: #172e08;
+  font-size: 1.2vw;
+  height: 90%;
+  width: 45%;
+}
 /* disposer view ============================================ */
 #disposer-view {
   display: flex;
