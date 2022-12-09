@@ -1,6 +1,5 @@
-import { click } from "@testing-library/user-event/dist/click";
 import { useState, useEffect } from "react";
-import Agric from "../images/agriculture.jpg";
+import { Bar } from "react-chartjs-2";
 
 export default function DisposerHome({ user }) {
   let [name, setName] = useState("");
@@ -8,7 +7,6 @@ export default function DisposerHome({ user }) {
   let [date, setDate] = useState("");
   let [weight, setWeight] = useState("");
   let [wastetype, setWasteType] = useState("");
-  let [email, setEmail] = useState("");
   let [instructions, setInstructions] = useState("");
   let [isLoading, setIsLoading] = useState(false);
   let [errors, setErrors] = useState([]);
@@ -116,7 +114,6 @@ export default function DisposerHome({ user }) {
       {/* <div id="disposer-home-title">Your Contributions</div> */}
 
       <section id="disposer-stats">
-
         <div id="disposer-stats-title">
           <div>
             <span>Points</span>
