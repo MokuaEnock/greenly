@@ -13,6 +13,9 @@ Okoa Waste
 
 ## Introduction[![](./docs/img/pin.svg)](#introduction)
 
+Bacckend live link (https://okoa-production.up.railway.app/)
+Backend repository (https://github.com/MokuaEnock/okoa_api)
+
 The root cause of waste management in Nairobi is how the waste is collected, and setting up proper
 waste collection mechanisms. Setting up a common platform for waste collectors and waste
 producers such as households and mini industries such as schools will be the proper way to go.
