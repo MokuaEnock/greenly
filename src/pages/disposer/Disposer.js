@@ -3,10 +3,10 @@ import DisposerHome from "./DisposerHome";
 import DisposerProfile from "./DisposerProfile";
 
 export default function Disposer({ user, setUser }) {
-  console.log(user);
+  // console.log(user);
 
   function handleDelete() {
-    fetch("http://localhost:3000/logout", {
+    fetch("https://okoa-production.up.railway.app/logout", {
       method: "DELETE",
       mode: "cors",
     }).then((res) => {

@@ -14,7 +14,7 @@ export default function Auth({ setLog, log, onLogin }) {
   function handleSubmit(e) {
     e.preventDefault();
     setIsLoading(true);
-    fetch("http://localhost:3000/signup", {
+    fetch("https://okoa-production.up.railway.app/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -83,7 +83,7 @@ export default function Auth({ setLog, log, onLogin }) {
             return <p className="errors">{error}</p>;
           })}
         </span>
-        
+
         <button className="form-button-submit" type="submit">
           {isLoading ? "Loading..." : "Sign Up"}
         </button>

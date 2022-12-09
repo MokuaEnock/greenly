@@ -14,7 +14,7 @@ export default function DisposerHome({ user }) {
   function handleSubmit(e) {
     e.preventDefault();
     setIsLoading(true);
-    fetch("http://localhost:3000/orders", {
+    fetch("https://okoa-production.up.railway.app/orders", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -83,7 +83,7 @@ export default function DisposerHome({ user }) {
           <button
             id="view-delete"
             onClick={() => {
-              fetch(`http://localhost:3000/orders/${item.id}`, {
+              fetch(`https://okoa-production.up.railway.app/orders/${item.id}`, {
                 method: "DELETE",
               }).then((res) => res.json());
             }}

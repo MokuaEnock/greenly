@@ -29,7 +29,7 @@ function App() {
   }, []); */
 
   useEffect(() => {
-    fetch("http://localhost:3000/me").then((r) => {
+    fetch("https://okoa-production.up.railway.app/me").then((r) => {
       if (r.ok) {
         r.json().then((user) => setUser(user));
       }

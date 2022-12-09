@@ -164,10 +164,10 @@ export default function Landing() {
           </div>
           <div className="up">
             <span className="process-icon"></span>
-            <span className="process-label">De-Toxing</span>
+            <span className="process-label">Channeling</span>
           </div>
           <div className="down">
-            <span className="process-label">Treatment</span>
+            <span className="process-label">Decomposing</span>
             <span className="process-icon"></span>
           </div>
           <div className="up">
