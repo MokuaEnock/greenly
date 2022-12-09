@@ -491,11 +491,19 @@
 }
 
 #view-info {
-  height: 15%;
+  height: max-content;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1vw;
+}
+
+.view-attr {
+  height: 3.5vw;
+  background-color: #172e08;
 }
 
 #view-value {

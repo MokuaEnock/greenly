@@ -245,7 +245,11 @@ export default function DisposerHome({ user }) {
         <div id="disposer-view">
           <span id="view-title">Hello </span>
           <span id="view-image"></span>
-          <span id="view-info"></span>
+          <span id="view-info">
+            <buttons className="view-attr"></buttons>
+            <buttons className="view-attr"></buttons>
+            <buttons className="view-attr"></buttons>
+          </span>
           <span id="view-value">
             <button></button>
             <button></button>
