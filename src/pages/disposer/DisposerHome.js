@@ -225,7 +225,7 @@ export default function DisposerHome({ user }) {
         </form>
       </section>
 
-      <div id="disposer-home-title">Previous disposals</div>
+      <div id="disposer-home-title">Pending Disposals</div>
 
       <section id="disposer-previous">
         <div id="disposer-list">
