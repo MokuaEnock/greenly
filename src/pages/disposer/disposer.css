@@ -502,8 +502,14 @@
 }
 
 .view-attr {
+  font-size: 1.5vw;
   height: 3.5vw;
+  color: #d8ffc0;
   background-color: #172e08;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 #view-value {
@@ -512,7 +518,7 @@
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
-  font-size: 1.7vw;
+  font-size: 1.5vw;
   height: 7%;
 }
 

@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
-import { Bar } from "react-chartjs-2";
-import Plot from "react-plotly.js";
-
+import Agric from "../images/agriculture.jpg";
 export default function DisposerHome({ user }) {
   let [name, setName] = useState("");
   let [location, setLocation] = useState("");
@@ -105,6 +103,40 @@ export default function DisposerHome({ user }) {
   //     </div>
   //   );
   // });
+
+  let item_view = [item].map((item) => {
+    return (
+      <div id="disposer-view" key={item.id}>
+        <span id="view-title">Hello {item.title}</span>
+        <span id="view-image">
+          <img src={Agric} alt="product" />
+        </span>
+        <span id="view-info">
+          <button className="view-attr">{item.location}</button>
+          <button className="view-attr">{item.date}</button>
+          <button className="view-attr">{item.weight} kgs</button>
+        </span>
+        <span id="view-value">
+          <button>Points: 145</button>
+          <button>Ksh: 20</button>
+        </span>
+        <span id="view-instructions"></span>
+        <span id="view-buttons">
+          <button id="view-update">Update</button>
+          <button
+            id="view-delete"
+            onClick={() => {
+              fetch(`http://localhost:3000/products/${item.id}`, {
+                method: "DELETE",
+              }).then((res) => res.json());
+            }}
+          >
+            Cancel
+          </button>
+        </span>
+      </div>
+    );
+  });
 
   let points = orders.map((item) => {
     return item.weight;
@@ -242,24 +274,25 @@ export default function DisposerHome({ user }) {
 
       <section id="disposer-previous">
         <div id="disposer-list">{all_orders.reverse()}</div>
-        <div id="disposer-view">
+        {/* <div id="disposer-view">
           <span id="view-title">Hello </span>
           <span id="view-image"></span>
           <span id="view-info">
-            <buttons className="view-attr"></buttons>
-            <buttons className="view-attr"></buttons>
-            <buttons className="view-attr"></buttons>
+            <buttons className="view-attr">Nairobi</buttons>
+            <buttons className="view-attr">11/02/2022</buttons>
+            <buttons className="view-attr">10 kgs</buttons>
           </span>
           <span id="view-value">
-            <button></button>
-            <button></button>
+            <button>Points: 145</button>
+            <button>Ksh: 20</button>
           </span>
           <span id="view-instructions"></span>
           <span id="view-buttons">
             <button id="view-update">Update</button>
             <button id="view-delete">Cancel</button>
           </span>
-        </div>
+        </div> */}
+        {item_view}
       </section>
     </main>
   );
