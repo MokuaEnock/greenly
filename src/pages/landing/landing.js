@@ -35,25 +35,25 @@ export default function Landing() {
         <div id="impact-title">Our Impact</div>
         <div id="impact-content">
           <div>
-            <span className="span-image"></span>
+            <span className="span-image" id="spa1"></span>
             <span className="span-number">500</span>
             <span className="span-word">Waste Collectors</span>
           </div>
 
           <div>
-            <span className="span-image"></span>
+            <span className="span-image" id="spa2"></span>
             <span className="span-number">500</span>
             <span className="span-word">Proffesional Workers</span>
           </div>
 
           <div>
-            <span className="span-image"></span>
+            <span className="span-image" id="spa3"></span>
             <span className="span-number">500</span>
             <span className="span-word">Industries Served</span>
           </div>
 
           <div>
-            <span className="span-image"></span>
+            <span className="span-image" id="spa4"></span>
             <span className="span-number">500</span>
             <span className="span-word">Waste recycled</span>
           </div>
