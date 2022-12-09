@@ -270,8 +270,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 60%;
-  border: thin solid #172e08;
+  width: 65%;
+  background-color: white;
   height: 100%;
 }
 
@@ -362,8 +362,6 @@
   margin-top: 0.2vw;
   border-radius: 0.2vw;
 }
-
-
 
 /* disposer view ============================================ */
 #disposer-view {
@@ -486,4 +484,18 @@
 #view-delete {
   background-color: #172e08;
   color: #d8ffc0;
+}
+
+#view-delete:hover {
+  background-color: red;
+  font-size: 2vw;
+  color: white;
+  border: thin solid red;
+}
+
+#view-update:hover {
+  background-color: rgb(0, 56, 121);
+  font-size: 2vw;
+  color: white;
+  border: thin solid rgb(0, 56, 121);
 }
