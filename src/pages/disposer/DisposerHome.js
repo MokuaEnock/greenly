@@ -42,27 +42,46 @@ export default function DisposerHome({ user }) {
 
   let orders = user.orders;
 
+  // let all_orders = orders.map((item) => {
+  //   return (
+  //     <div
+  //       className="disposer-item"
+  //       key={item.id}
+  //       onClick={() => setItem(item)}
+  //     >
+  //       <div className="disposer-item-image"></div>
+
+  //       <div className="disposer-item-info">
+  //         <div>
+  //           <span>Type: {item.wastetype}</span>
+  //           <span>Location: {item.location}</span>
+  //         </div>
+
+  //         <div id="additional-info">
+  //           <span>Weight: {item.weight}</span>
+  //           <span>Date: {item.date}</span>
+  //           <span>Id: {item.id}</span>
+  //         </div>
+  //       </div>
+  //     </div>
+  //   );
+  // });
+
   let all_orders = orders.map((item) => {
     return (
-      <div
-        className="disposer-item"
-        key={item.id}
-        onClick={() => setItem(item)}
-      >
-        <div className="disposer-item-image"></div>
-
-        <div className="disposer-item-info">
-          <div>
-            <span>Type: {item.wastetype}</span>
-            <span>Location: {item.location}</span>
-          </div>
-
-          <div id="additional-info">
-            <span>Weight: {item.weight}</span>
-            <span>Date: {item.date}</span>
-            <span>Id: {item.id}</span>
-          </div>
-        </div>
+      <div id="disposer-item" key={item.id} onClick={() => setItem(item)}>
+        <span className="item-image">
+          <img src={Agric} alt="dispose" />
+        </span>
+        <span className="item-info">
+          <button>{item.location}</button>
+          <button>{item.wastetype}</button>
+        </span>
+        <span className="item-insts">{item.instructions}</span>
+        <span className="item-buts">
+          <button>{item.weight} kgs</button>
+          <button>{item.date}</button>
+        </span>
       </div>
     );
   });
@@ -235,7 +254,7 @@ export default function DisposerHome({ user }) {
 
       <section id="disposer-previous">
         <div id="disposer-list">
-          <div id="disposer-item">
+         {/*  <div id="disposer-item">
             <span className="item-image">
               <img src={Agric} alt="dispose" />
             </span>
@@ -248,12 +267,8 @@ export default function DisposerHome({ user }) {
               <button>45 kgs</button>
               <button>12/03/2022</button>
             </span>
-          </div>
-          <div id="disposer-item"></div>
-          <div id="disposer-item"></div>
-          <div id="disposer-item"></div>
-          <div id="disposer-item"></div>
-          <div id="disposer-item"></div>
+          </div> */}
+        {all_orders}
         </div>
         {item_view}
       </section>

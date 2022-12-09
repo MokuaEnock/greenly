@@ -276,25 +276,23 @@
 #disposer-item {
   margin-left: 1vw;
   margin-right: 1vw;
+  background-color: #d8ffc0;
   margin-top: 1vw;
   color: #172e08;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  justify-content: space-evenly;
   height: 20vw;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 }
 
 #disposer-item > * {
-  width: 95%;
-  border: thin solid;
+  width: 100%;
   border-radius: inherit;
 }
 
 .item-image {
-  height: 50%;
+  height: 48%;
 }
 .item-image > img {
   width: 100%;
@@ -310,16 +308,17 @@
 }
 
 .item-info > button {
-  border: thin solid #172e08;
+  border: thin solid transparent;
   background-color: transparent;
   color: #172e08;
-  font-size: 1.3vw;
+  font-size: .9vw;
+  text-align: center;
   height: 90%;
-  width: 45%;
+  width: 50%;
 }
 .item-insts {
-  height: 20%;
-  font-size: 1.2vw;
+  height: 30%;
+  font-size: 1vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -343,9 +342,9 @@
   border: thin solid #172e08;
   background-color: transparent;
   color: #172e08;
-  font-size: 1.2vw;
+  font-size: 1vw;
   height: 90%;
-  width: 45%;
+  width: 47%;
 }
 /* disposer view ============================================ */
 #disposer-view {
@@ -370,11 +369,11 @@
   justify-content: center;
   text-align: center;
   font-size: 1.7vw;
-  height: 7%;
+  height: 10%;
 }
 
 #view-image {
-  height: 25%;
+  height: 35%;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -385,7 +384,7 @@
   height: 100%;
 }
 #view-info {
-  height: max-content;
+  height: 10%;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -414,7 +413,7 @@
   justify-content: space-evenly;
   text-align: center;
   font-size: 1.5vw;
-  height: 7%;
+  height: 9%;
 }
 
 #view-value > * {
@@ -439,7 +438,7 @@
   justify-content: center;
   text-align: center;
   font-size: 1.5vw;
-  height: 20%;
+  height: 25%;
 }
 
 #view-buttons {
@@ -449,7 +448,7 @@
   justify-content: space-evenly;
   text-align: center;
   font-size: 1.7vw;
-  height: 7%;
+  height: 10%;
 }
 
 #view-buttons > * {
