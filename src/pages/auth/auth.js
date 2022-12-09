@@ -13,6 +13,7 @@ export default function Auth({ setLog, log, onLogin }) {
   let navigate = useNavigate();
   function handleSubmit(e) {
     e.preventDefault();
+    
     setIsLoading(true);
     fetch("https://okoa-production.up.railway.app/signup", {
       method: "POST",
