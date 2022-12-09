@@ -116,46 +116,49 @@ export default function DisposerHome({ user }) {
       {/* <div id="disposer-home-title">Your Contributions</div> */}
 
       <section id="disposer-stats">
+
         <div id="disposer-stats-title">
           <div>
-            <span>Total points earned</span>
+            <span>Points</span>
             <span>{points * 10}</span>
           </div>
 
           <div>
-            <span>Value of points in Ksh</span>
+            <span>Value</span>
             <span>{(points * 10) / 0.3}</span>
           </div>
 
           <div>
-            <span>Total weight of waste</span>
+            <span>Weight</span>
             <span>{points.reduce((a, b) => a + b, 0)}</span>
           </div>
         </div>
+
         <div id="disposer-stats-stats">
-          <span>Hello Enock</span>
+          <span>Contribution this month</span>
+          <span id="graph"></span>
         </div>
 
         <div id="disposer-stats-words">
           <div>
-            <span>Collections this Month</span>
+            <span>Collections</span>
             <span>{points.length}</span>
           </div>
 
           <div>
-            <span>Total weight this week</span>
+            <span>Weight</span>
             <span>{points.reduce((a, b) => a + b, 0)}</span>
           </div>
 
           <div>
-            <span>Total waste category</span>
+            <span>Top Category</span>
             <span>Organic</span>
           </div>
         </div>
       </section>
 
       <section id="user-form">
-        <form>
+        <form onSubmit={handleSubmit}>
           <div id="user-form-title">Place Your order</div>
           <div id="user-form-cont">
             <div id="user-form-icons"></div>
@@ -235,99 +238,6 @@ export default function DisposerHome({ user }) {
               <span></span>
             </div>
           </div>
-        </form>
-      </section>
-
-      <div id="disposer-home-title">Request for a disposal</div>
-
-      <section id="disposer-form">
-        <form onSubmit={handleSubmit}>
-          <span>
-            <label>Hello whats your name?</label>
-            <input
-              type="text"
-              autoComplete="on"
-              required
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-          </span>
-
-          <span>
-            <label>Location for the waste collection?</label>
-            <input
-              type="text"
-              autoComplete="on"
-              required
-              value={location}
-              onChange={(e) => setLocation(e.target.value)}
-            />
-          </span>
-
-          <span>
-            <label>Waste collection date?</label>
-            <input
-              type="date"
-              autoComplete="on"
-              required
-              value={date}
-              onChange={(e) => setDate(e.target.value)}
-            />
-          </span>
-
-          <span>
-            <label>The weight of the waste?</label>
-            <input
-              type="number"
-              minimum="1"
-              maximum="100"
-              autoComplete="on"
-              required
-              value={weight}
-              onChange={(e) => setWeight(e.target.value)}
-            />
-          </span>
-
-          <span>
-            <label>Type of waste?</label>
-            <input
-              type="text"
-              autoComplete="on"
-              required
-              value={wastetype}
-              onChange={(e) => setWasteType(e.target.value)}
-            />
-          </span>
-
-          <span>
-            <label>Your E-mail?</label>
-            <input
-              type="email"
-              autoComplete="on"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </span>
-
-          <span>
-            <label>Any additional instructions?</label>
-            <input
-              type="text"
-              autoComplete="on"
-              required
-              value={instructions}
-              onChange={(e) => setInstructions(e.target.value)}
-            />
-          </span>
-
-          <span className="error-cont">
-            {errors.map((error) => {
-              return <p className="errors">{error}</p>;
-            })}
-          </span>
-
-          <button type="submit">Place order</button>
         </form>
       </section>
 

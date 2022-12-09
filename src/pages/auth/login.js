@@ -1,9 +1,9 @@
 import "./auth.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 // import Disposer from "../disposer/Disposer";
 import { useNavigate } from "react-router-dom";
 
-export default function Login({ onLogin, user }) {
+export default function Login({ onLogin }) {
   let [username, setUsername] = useState("");
   // let [email, setEmail] = useState("");
   // let [login, setLogin] = useState("");
@@ -24,17 +24,13 @@ export default function Login({ onLogin, user }) {
     }).then((r) => {
       setIsLoading(false);
       if (r.ok) {
-        r.json().then((user) => {
-          onLogin(user);
-          navigate("/disposer");
-          console.log("success", user);
-        });
+        r.json().then((user) => onLogin(user));
+        navigate(`/disposer`);
       } else {
-        r.json().then((err) => setErrors(err.errors));
+        r.then((err) => setErrors(err.errors));
       }
     });
   }
-
 
   return (
     <main className="auth" onSubmit={handleSubmit}>
