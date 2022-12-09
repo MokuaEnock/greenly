@@ -40,13 +40,8 @@ export default function DisposerHome({ user }) {
     });
   }
 
-  // function handleDelete(product) {
-  //   fetch(`http://localhost:3000/products/${product.id}`, {
-  //     method: "DELETE",
-  //   }).then((res) => res.json());
-  // }
-
   let orders = user.orders;
+
   let all_orders = orders.map((item) => {
     return (
       <div
@@ -68,41 +63,9 @@ export default function DisposerHome({ user }) {
             <span>Id: {item.id}</span>
           </div>
         </div>
-
-        {/* <div className="disposer-item-add">
-          <button className="update">Update</button>
-          <button
-            className="delete"
-            onClick={() => {
-              fetch(`http://localhost:3000/products/${item.id}`, {
-                method: "DELETE",
-                mode: "cors",
-              }).then((res) => res.json());
-            }}
-          >
-            Delete
-          </button>
-        </div> */}
       </div>
     );
   });
-
-  // let item_view = [item].map((item, index) => {
-  //   return (
-  //     <div id="disposer-view" key={index}>
-  //       <span className="title">Here is your order {item.name}</span>
-  //       <span className="image"></span>
-  //       <span className="categories">
-  //         <span className="categ-attributes">{item.date}</span>
-  //         <span className="categ-attributes">{item.wastetype}</span>
-  //         <span className="categ-attributes">{item.location}</span>
-  //         <span className="categ-attributes">{item.weight}</span>
-  //       </span>
-  //       <span className="instructions">{item.instructions}</span>
-  //       <span className="points">Points earned: {item.weight * 10}</span>
-  //     </div>
-  //   );
-  // });
 
   let item_view = [item].map((item) => {
     return (
@@ -120,13 +83,13 @@ export default function DisposerHome({ user }) {
           <button>Points: 145</button>
           <button>Ksh: 20</button>
         </span>
-        <span id="view-instructions"></span>
+        <span id="view-instructions">{item.instructions}</span>
         <span id="view-buttons">
           <button id="view-update">Update</button>
           <button
             id="view-delete"
             onClick={() => {
-              fetch(`http://localhost:3000/products/${item.id}`, {
+              fetch(`http://localhost:3000/orders/${item.id}`, {
                 method: "DELETE",
               }).then((res) => res.json());
             }}
@@ -144,8 +107,6 @@ export default function DisposerHome({ user }) {
 
   return (
     <main id="disposer-home">
-      {/* <div id="disposer-home-title">Your Contributions</div> */}
-
       <section id="disposer-stats">
         <div id="disposer-stats-title">
           <div>
@@ -274,24 +235,6 @@ export default function DisposerHome({ user }) {
 
       <section id="disposer-previous">
         <div id="disposer-list">{all_orders.reverse()}</div>
-        {/* <div id="disposer-view">
-          <span id="view-title">Hello </span>
-          <span id="view-image"></span>
-          <span id="view-info">
-            <buttons className="view-attr">Nairobi</buttons>
-            <buttons className="view-attr">11/02/2022</buttons>
-            <buttons className="view-attr">10 kgs</buttons>
-          </span>
-          <span id="view-value">
-            <button>Points: 145</button>
-            <button>Ksh: 20</button>
-          </span>
-          <span id="view-instructions"></span>
-          <span id="view-buttons">
-            <button id="view-update">Update</button>
-            <button id="view-delete">Cancel</button>
-          </span>
-        </div> */}
         {item_view}
       </section>
     </main>
