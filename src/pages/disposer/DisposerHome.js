@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Bar } from "react-chartjs-2";
+import Plot from "react-plotly.js";
 
 export default function DisposerHome({ user }) {
   let [name, setName] = useState("");
@@ -70,7 +71,7 @@ export default function DisposerHome({ user }) {
           </div>
         </div>
 
-        <div className="disposer-item-add">
+        {/* <div className="disposer-item-add">
           <button className="update">Update</button>
           <button
             className="delete"
@@ -83,27 +84,27 @@ export default function DisposerHome({ user }) {
           >
             Delete
           </button>
-        </div>
+        </div> */}
       </div>
     );
   });
 
-  let item_view = [item].map((item, index) => {
-    return (
-      <div id="disposer-view" key={index}>
-        <span className="title">Here is your order {item.name}</span>
-        <span className="image"></span>
-        <span className="categories">
-          <span className="categ-attributes">{item.date}</span>
-          <span className="categ-attributes">{item.wastetype}</span>
-          <span className="categ-attributes">{item.location}</span>
-          <span className="categ-attributes">{item.weight}</span>
-        </span>
-        <span className="instructions">{item.instructions}</span>
-        <span className="points">Points earned: {item.weight * 10}</span>
-      </div>
-    );
-  });
+  // let item_view = [item].map((item, index) => {
+  //   return (
+  //     <div id="disposer-view" key={index}>
+  //       <span className="title">Here is your order {item.name}</span>
+  //       <span className="image"></span>
+  //       <span className="categories">
+  //         <span className="categ-attributes">{item.date}</span>
+  //         <span className="categ-attributes">{item.wastetype}</span>
+  //         <span className="categ-attributes">{item.location}</span>
+  //         <span className="categ-attributes">{item.weight}</span>
+  //       </span>
+  //       <span className="instructions">{item.instructions}</span>
+  //       <span className="points">Points earned: {item.weight * 10}</span>
+  //     </div>
+  //   );
+  // });
 
   let points = orders.map((item) => {
     return item.weight;
@@ -133,7 +134,6 @@ export default function DisposerHome({ user }) {
 
         <div id="disposer-stats-stats">
           <span>Contribution this month</span>
-          <span id="graph"></span>
         </div>
 
         <div id="disposer-stats-words">
@@ -242,8 +242,17 @@ export default function DisposerHome({ user }) {
 
       <section id="disposer-previous">
         <div id="disposer-list">{all_orders.reverse()}</div>
-
-        {item_view}
+        <div id="disposer-view">
+          <span id="view-title">Hello </span>
+          <span id="view-image"></span>
+          <span id="view-info"></span>
+          <span id="view-vallue"></span>
+          <span id="view-instructions"></span>
+          <span id="view-buttons">
+            <button id="view-update"></button>
+            <button id="view-delete"></button>
+          </span>
+        </div>
       </section>
     </main>
   );
