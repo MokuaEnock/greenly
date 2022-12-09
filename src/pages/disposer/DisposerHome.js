@@ -252,8 +252,8 @@ export default function DisposerHome({ user }) {
           </span>
           <span id="view-instructions"></span>
           <span id="view-buttons">
-            <button id="view-update"></button>
-            <button id="view-delete"></button>
+            <button id="view-update">Update</button>
+            <button id="view-delete">Cancel</button>
           </span>
         </div>
       </section>
