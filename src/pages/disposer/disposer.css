@@ -511,9 +511,11 @@
 #view-value > * {
   width: 45%;
   border: thin solid #172e08;
+  background-color: #172e08;
   height: 90%;
   text-align: left;
   display: flex;
+  color: #d8ffc0;
   flex-direction: row;
   align-items: center;
   justify-content: center;

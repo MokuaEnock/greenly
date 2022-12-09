@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 
 * {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
 }
 
 body {
@@ -12,16 +12,15 @@ body {
   justify-content: flex-start;
   align-items: center;
   background-color: #d8ffc0;
-  color: #172E08;
+  color: #172e08;
 }
 
-button{
-  cursor:pointer;
+button {
+  cursor: pointer;
 }
 
 #root {
   width: 90%;
-  border: thin solid black;
   height: max-content;
   display: flex;
   flex-direction: column;
@@ -30,7 +29,6 @@ button{
 }
 
 main {
-  border: thin solid black;
   min-height: 46vw;
   width: 100%;
 }
@@ -39,19 +37,22 @@ footer {
   border: thin solid black;
   width: 100%;
   height: 20vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 header {
   width: 100%;
   height: 5vw;
-  border: thin solid black;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-header>* {
+header > * {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -60,16 +61,14 @@ header>* {
 
 header a {
   text-decoration: none;
-  color: #172E08;
+  color: #172e08;
 }
 
 #header-logo {
-  border: thin solid black;
   height: 100%;
   width: 25%;
   font-size: 3vw;
   font-weight: bold;
-
 }
 
 #header-info {
@@ -77,8 +76,6 @@ header a {
   height: 70%;
   width: 45%;
 }
-
-
 
 #header-forms {
   font-size: 2vw;
@@ -90,20 +87,20 @@ header a {
   align-items: center;
 }
 
-#header-forms>a {
+#header-forms > a {
   width: 45%;
-  background-color: #172E08;
+  background-color: #172e08;
   height: 70%;
   color: #d8ffc0;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  border-radius: .2vw;
+  border-radius: 0.2vw;
 }
 
 #header-forms :hover {
-  color: #172E08;
-  border: double #172E08 0.5vw;
+  color: #172e08;
+  border: double #172e08 0.5vw;
   background-color: #d8ffc0;
 }
