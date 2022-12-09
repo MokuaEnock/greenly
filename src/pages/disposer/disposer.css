@@ -198,7 +198,6 @@ text-align: center;
 #disposer-stats-title {
     width: 20%;
     height: 100%;
-    border: thin solid #172e08;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -208,7 +207,6 @@ text-align: center;
 #disposer-stats-stats {
     width: 60%;
     height: 100%;
-    border: thin solid #172e08;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -237,7 +235,6 @@ text-align: center;
 #disposer-stats-words {
     width: 20%;
     height: 100%;
-    border: thin solid #172e08;
     display: flex;
     flex-direction: column;
     align-items: center;
