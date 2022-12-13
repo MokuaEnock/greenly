@@ -4,6 +4,7 @@ import Dumpsite1 from "../images/dumpsite1.jpg";
 import Dumpsite2 from "../images/dumpsite2.jpg";
 import Dumpsite3 from "../images/dumpsite3.jpg";
 import Paradise1 from "../images/paradise1.jpg";
+import Africa from "../images/Africa.jpg";
 import Paradise2 from "../images/paradise2.jpg";
 import Tagimage from "../images/Recycle.svg";
 import Paper from "../images/paper.jpg";
@@ -194,7 +195,9 @@ export default function Landing() {
       </section>
 
       <section id="request">
-        <div id="image"></div>
+        <div id="image">
+          {/* <img src={Africa} alt="Africa" /> */}
+        </div>
         <div id="detail">
           <span>
             Join us today in turning Africa green, request a <br />

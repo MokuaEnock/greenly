@@ -435,7 +435,7 @@
   width: 15%;
   height: 70%;
   display: flex;
-  border: .2vw solid white;
+  border: 0.2vw solid white;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
@@ -512,13 +512,12 @@
 #partners > #content > span {
   width: 15%;
   height: 8vw;
-  background-color: white ;
+  background-color: white;
 }
 
 #request {
   width: 110%;
   height: 30vw;
-  border: thin solid black;
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -527,9 +526,14 @@
 }
 
 #request > #image {
-  width: 40%;
+  width: 50%;
   height: 100%;
-  background-color: aqua;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/Africa.jpg");
+}
+
+#request > #image {
 }
 
 #request > #detail {
