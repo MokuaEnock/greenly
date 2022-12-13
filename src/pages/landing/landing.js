@@ -6,7 +6,7 @@ import Dumpsite3 from "../images/dumpsite3.jpg";
 import Paradise1 from "../images/paradise1.jpg";
 import Africa from "../images/Africa.jpg";
 import Paradise2 from "../images/paradise2.jpg";
-import Tagimage from "../images/Recycle.svg";
+import Tagimage from "../images/Recycle1.svg";
 import Paper from "../images/paper.jpg";
 import Agric from "../images/agriculture.jpg";
 import Steel from "../images/steel.jpg";
@@ -195,13 +195,11 @@ export default function Landing() {
       </section>
 
       <section id="request">
-        <div id="image">
-          {/* <img src={Africa} alt="Africa" /> */}
-        </div>
+        <div id="image">{/* <img src={Africa} alt="Africa" /> */}</div>
         <div id="detail">
           <span>
-            Join us today in turning Africa green, request a <br />
-            free waste collection from us.
+            Join us today in turning Africa green, request a free waste
+            collection from us.
           </span>
           <button>Request for waste Collection</button>
         </div>

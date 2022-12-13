@@ -396,7 +396,6 @@
 }
 
 #image-tag > img {
-  background-color: #ecf0f8;
   width: 100%;
 }
 
@@ -533,9 +532,6 @@
   background-image: url("../images/Africa.jpg");
 }
 
-#request > #image {
-}
-
 #request > #detail {
   width: 60%;
   height: 100%;
@@ -556,5 +552,7 @@
   width: 50%;
   height: 4vw;
   font-size: 1.7vw;
-  border: thin solid black;
+  border: thin solid transparent;
+  background-color: #014421;
+  color: #d8ffc0;
 }
