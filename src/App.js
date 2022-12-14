@@ -13,6 +13,7 @@ import Login from "./pages/auth/login";
 // import Collector from "./pages/collector/Collector";
 import Disposer from "./pages/disposer/Disposer";
 import { useState, useEffect } from "react";
+import Redirect from "./pages/redirect/redirect";
 
 function App() {
   let [user, setUser] = useState(null);
@@ -43,6 +44,7 @@ function App() {
         <Route path="/" element={<Landing />} />
 
         <Route path="/about" element={<About />} />
+        <Route path="/redirect" element={<Redirect />} />
 
         {/* <Route path="/services" element={<Services />} /> */}
         {/* <Route path="/events" element={<Events />} /> */}
