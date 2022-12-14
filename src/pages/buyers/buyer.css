@@ -27,3 +27,12 @@
   align-items: center;
   justify-content: center;
 }
+
+#buyer-heading {
+  font-weight: bold;
+}
+
+#buyer-par {
+  color: grey;
+  font-size: 1.6vw;
+}
