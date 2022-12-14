@@ -14,20 +14,11 @@ import Login from "./pages/auth/login";
 import Disposer from "./pages/disposer/Disposer";
 import { useState, useEffect } from "react";
 import Redirect from "./pages/redirect/redirect";
+import Buyer from "./pages/buyers/buyer";
 
 function App() {
   let [user, setUser] = useState(null);
   let [log, setLog] = useState(false);
-
-  /*   useEffect(() => {
-    fetch("http://localhost:3000/me").then((res) => {
-      if (res.ok) {
-        res.json().then((user) => {
-          setUser(user);
-        });
-      }
-    });
-  }, []); */
 
   useEffect(() => {
     fetch("https://okoa-production.up.railway.app/me").then((r) => {
@@ -62,6 +53,7 @@ function App() {
           element={<Login user={user} onLogin={setUser} />}
         />
         {/* <Route path="/collector" element={<Collector />} /> */}
+        <Route path="/collector" element={<Buyer />} />
         <Route
           path="/disposer"
           element={<Disposer user={user} setUser={setUser} />}
