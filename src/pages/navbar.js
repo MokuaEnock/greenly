@@ -6,11 +6,8 @@ export default function NavBar() {
       <div id="header-info">
         <NavLink to="/">Home</NavLink>
 
-        {/* <NavLink to="/about">About Us</NavLink> */}
-        {/* <NavLink to="/services">Services</NavLink> */}
-        {/* <NavLink to="/process">Process</NavLink> */}
-        {/* <NavLink to="/events">Events</NavLink> */}
-        {/* <NavLink to="/collector">Collector</NavLink> */}
+        <NavLink to="/collector">Collector</NavLink>
+        <NavLink to="/buyer">Buyer</NavLink>
 
         <NavLink to="/disposer">Disposer</NavLink>
         <NavLink to="/login">Login</NavLink>

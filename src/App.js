@@ -4,13 +4,9 @@ import NavBar from "./pages/navbar";
 import Landing from "./pages/landing/landing";
 import Footer from "./pages/footer";
 import About from "./pages/about/about";
-// import Services from "./pages/services/services";
-// import Events from "./pages/events/events";
-import Process from "./pages/process/process";
-// import Contact from "./pages/contact/contact";
 import Auth from "./pages/auth/auth";
 import Login from "./pages/auth/login";
-// import Collector from "./pages/collector/Collector";
+import Collector from "./pages/collector/Collector";
 import Disposer from "./pages/disposer/Disposer";
 import { useState, useEffect } from "react";
 import Redirect from "./pages/redirect/redirect";
@@ -33,17 +29,9 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Landing />} />
-
         <Route path="/about" element={<About />} />
         <Route path="/redirect" element={<Redirect />} />
-
-        {/* <Route path="/services" element={<Services />} /> */}
-        {/* <Route path="/events" element={<Events />} /> */}
-
-        <Route path="/process" element={<Process />} />
-
-        {/* <Route path="/contact" element={<Contact />} /> */}
-
+        <Route path="/collector" element={<Collector />} />
         <Route
           path="/auth"
           element={<Auth log={log} setLog={setLog} onLogin={setUser} />}
@@ -52,8 +40,7 @@ function App() {
           path="/login"
           element={<Login user={user} onLogin={setUser} />}
         />
-        {/* <Route path="/collector" element={<Collector />} /> */}
-        <Route path="/collector" element={<Buyer />} />
+        <Route path="/buyer" element={<Buyer />} />
         <Route
           path="/disposer"
           element={<Disposer user={user} setUser={setUser} />}
