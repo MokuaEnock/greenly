@@ -74,22 +74,29 @@ export default function Auth({ setLog, log, onLogin }) {
           />
         </span>
 
-        <input
-          type="password"
-          placeholder="Enter password"
-          autoComplete="on"
-          required
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <input
-          type="password"
-          placeholder="Confirm password"
-          required
-          autoComplete="on"
-          value={passwordConfirmation}
-          onChange={(e) => setPasswordConfirmation(e.target.value)}
-        />
+        <span className="user-fields">
+          <label>Password</label>
+          <input
+            type="password"
+            placeholder="Enter password"
+            autoComplete="on"
+            required
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </span>
+
+        <span className="user-fields">
+          <label>Confirm password</label>
+          <input
+            type="password"
+            placeholder="Confirm password"
+            required
+            autoComplete="on"
+            value={passwordConfirmation}
+            onChange={(e) => setPasswordConfirmation(e.target.value)}
+          />
+        </span>
 
         <span className="error-cont">
           {errors.map((error) => {
