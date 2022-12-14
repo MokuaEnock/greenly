@@ -3,6 +3,27 @@
 
 #buyer {
   width: 100%;
-  height: 777vw;
-  background-color: #172e08;
+  height: max-content;
+  border: thin solid #172e08;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#buyer-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: max-content;
+}
+#buyer-title {
+  width: 100%;
+  height: 7vw;
+  border: thin solid #172e08;
+  display: flex;
+  font-size: 2vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
