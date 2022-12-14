@@ -31,3 +31,31 @@
   align-items: center;
   justify-content: center;
 }
+
+.login-title {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-title > * {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 50%;
+}
+
+.login-title > #title {
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+.login-title > #words {
+  font-size: 1.7vw;
+}

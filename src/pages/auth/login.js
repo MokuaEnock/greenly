@@ -35,7 +35,10 @@ export default function Login({ onLogin }) {
   return (
     <main className="auth" onSubmit={handleSubmit}>
       <form id="login">
-        <span>Login</span>
+        <span className="login-title">
+          <span id="title">Welcome back</span>
+          <span id="words">Please enter your details</span>
+        </span>
         <input
           type="text"
           autoComplete="on"
