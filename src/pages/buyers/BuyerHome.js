@@ -29,6 +29,96 @@ export default function BuyerHome() {
             <button className="price">Ksh 150/kg</button>
             <button className="order">Order</button>
           </span>
+        </div>{" "}
+        <div className="compost-card">
+          <span className="compost-card-image">
+            <img src={Agric} alt="compost" />
+          </span>
+          <span className="compost-card-info">
+            <button className="infos">Potassium</button>
+            <button className="infos">Moisture</button>
+            <button className="infos">Discounted</button>
+          </span>
+          <span className="compost-card-desc">
+            Compost, crumbly mass of rotted organic matter made from decomposed
+            plant material, used in gardening and agriculture.
+          </span>
+          <span className="compost-card-buttons">
+            <button className="price">Ksh 150/kg</button>
+            <button className="order">Order</button>
+          </span>
+        </div>{" "}
+        <div className="compost-card">
+          <span className="compost-card-image">
+            <img src={Agric} alt="compost" />
+          </span>
+          <span className="compost-card-info">
+            <button className="infos">Potassium</button>
+            <button className="infos">Moisture</button>
+            <button className="infos">Discounted</button>
+          </span>
+          <span className="compost-card-desc">
+            Compost, crumbly mass of rotted organic matter made from decomposed
+            plant material, used in gardening and agriculture.
+          </span>
+          <span className="compost-card-buttons">
+            <button className="price">Ksh 150/kg</button>
+            <button className="order">Order</button>
+          </span>
+        </div>{" "}
+        <div className="compost-card">
+          <span className="compost-card-image">
+            <img src={Agric} alt="compost" />
+          </span>
+          <span className="compost-card-info">
+            <button className="infos">Potassium</button>
+            <button className="infos">Moisture</button>
+            <button className="infos">Discounted</button>
+          </span>
+          <span className="compost-card-desc">
+            Compost, crumbly mass of rotted organic matter made from decomposed
+            plant material, used in gardening and agriculture.
+          </span>
+          <span className="compost-card-buttons">
+            <button className="price">Ksh 150/kg</button>
+            <button className="order">Order</button>
+          </span>
+        </div>{" "}
+        <div className="compost-card">
+          <span className="compost-card-image">
+            <img src={Agric} alt="compost" />
+          </span>
+          <span className="compost-card-info">
+            <button className="infos">Potassium</button>
+            <button className="infos">Moisture</button>
+            <button className="infos">Discounted</button>
+          </span>
+          <span className="compost-card-desc">
+            Compost, crumbly mass of rotted organic matter made from decomposed
+            plant material, used in gardening and agriculture.
+          </span>
+          <span className="compost-card-buttons">
+            <button className="price">Ksh 150/kg</button>
+            <button className="order">Order</button>
+          </span>
+        </div>{" "}
+        <div className="compost-card">
+          <span className="compost-card-image">
+            <img src={Agric} alt="compost" />
+          </span>
+          <span className="compost-card-info">
+            <button className="infos">Potassium</button>
+            <button className="infos">Moisture</button>
+            <button className="infos">Discounted</button>
+          </span>
+          <span className="compost-card-desc">
+            Compost, crumbly mass of rotted organic matter made from decomposed
+            plant material, used in gardening and agriculture.
+          </span>
+          <span className="compost-card-buttons">
+            <button className="price">Ksh 150/kg</button>
+            <button className="order">Order</button>
+          </span>
         </div>
       </section>
     </main>
