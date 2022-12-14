@@ -49,23 +49,31 @@ export default function Auth({ setLog, log, onLogin }) {
           <span id="title">Welcome to Okoa</span>
           <span id="words">Please enter your details</span>
         </span>
-        
-        <input
-          type="text"
-          placeholder="Enter username"
-          autoComplete="on"
-          required
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-        <input
-          type="email"
-          placeholder="Enter email"
-          required
-          autoComplete="on"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
+
+        <span className="user-fields">
+          <label>User-name</label>
+          <input
+            type="text"
+            placeholder="Enter username"
+            autoComplete="on"
+            required
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+        </span>
+
+        <span className="user-fields">
+          <label>Email</label>
+          <input
+            type="email"
+            placeholder="Enter email"
+            required
+            autoComplete="on"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </span>
+
         <input
           type="password"
           placeholder="Enter password"
