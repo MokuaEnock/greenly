@@ -61,14 +61,13 @@
 }
 
 .user-fields {
-  width: 100%;
+  width: 90%;
   height: 15%;
   font-size: 1.5vw;
   margin-top: 1vw;
-  border: thin solid #172e08;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 }
 
@@ -81,7 +80,7 @@
 }
 .user-fields > input {
   font-size: 1.5vw;
-  width: 90%;
+  width: 100%;
   height: 50%;
   border: thin solid #172e08;
   border-radius: 0.4vw;
@@ -89,4 +88,15 @@
 
 input:focus {
   outline: none;
+}
+
+.form-button-submit {
+  margin-top: 1vw;
+  width: 90%;
+  height: 9%;
+  border: thin solid transparent;
+  background-color: #172e08;
+  color: #d8ffc0;
+  font-size: 1.7vw;
+  border-radius: 0.4vw;
 }
