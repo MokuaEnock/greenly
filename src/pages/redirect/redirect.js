@@ -11,7 +11,7 @@ export default function Redirect() {
         Partner with us
       </Link>
       <Link className="redirects" to="/collector">
-        Collector waste
+        Collect waste
       </Link>
       <Link className="redirects" to="/buyer">
         Buy Compost
