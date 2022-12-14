@@ -4,7 +4,7 @@
 #buyer {
   width: 100%;
   height: max-content;
-  border: thin solid #172e08;
+  /* border: thin solid #172e08; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,7 +42,7 @@
   height: 5vw;
   display: flex;
   font-size: 3vw;
-  border: thin solid #172e08;
+  /* border: thin solid #172e08; */
   font-weight: bold;
   flex-direction: column;
   align-items: center;

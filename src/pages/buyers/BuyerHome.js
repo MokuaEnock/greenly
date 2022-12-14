@@ -1,5 +1,7 @@
 import Agric from "../images/agriculture.jpg";
+
 export default function BuyerHome() {
+
   return (
     <main id="buyer-home">
       <section id="buyer-title">
