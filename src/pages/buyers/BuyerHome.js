@@ -29,7 +29,7 @@ export default function BuyerHome() {
             <button className="price">Ksh 150/kg</button>
             <button className="order">Order</button>
           </span>
-        </div>{" "}
+        </div>
         <div className="compost-card">
           <span className="compost-card-image">
             <img src={Agric} alt="compost" />
@@ -47,7 +47,7 @@ export default function BuyerHome() {
             <button className="price">Ksh 150/kg</button>
             <button className="order">Order</button>
           </span>
-        </div>{" "}
+        </div>
         <div className="compost-card">
           <span className="compost-card-image">
             <img src={Agric} alt="compost" />
@@ -65,7 +65,7 @@ export default function BuyerHome() {
             <button className="price">Ksh 150/kg</button>
             <button className="order">Order</button>
           </span>
-        </div>{" "}
+        </div>
         <div className="compost-card">
           <span className="compost-card-image">
             <img src={Agric} alt="compost" />
@@ -83,7 +83,7 @@ export default function BuyerHome() {
             <button className="price">Ksh 150/kg</button>
             <button className="order">Order</button>
           </span>
-        </div>{" "}
+        </div>
         <div className="compost-card">
           <span className="compost-card-image">
             <img src={Agric} alt="compost" />
@@ -101,7 +101,7 @@ export default function BuyerHome() {
             <button className="price">Ksh 150/kg</button>
             <button className="order">Order</button>
           </span>
-        </div>{" "}
+        </div>
         <div className="compost-card">
           <span className="compost-card-image">
             <img src={Agric} alt="compost" />
