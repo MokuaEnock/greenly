@@ -45,7 +45,11 @@ export default function Auth({ setLog, log, onLogin }) {
   return (
     <main className="auth">
       <form id="login" onSubmit={handleSubmit}>
-        <span>Get Started</span>
+        <span className="login-title">
+          <span id="title">Welcome to Okoa</span>
+          <span id="words">Please enter your details</span>
+        </span>
+        
         <input
           type="text"
           placeholder="Enter username"
