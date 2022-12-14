@@ -75,7 +75,7 @@
 
 .compost-card > * {
   width: 95%;
-  border: thin solid #172e08;
+  /* border: thin solid #172e08; */
 }
 
 .compost-card-image {
@@ -93,12 +93,27 @@
   justify-content: space-evenly;
   height: 10%;
 }
+
+.compost-card-image > img {
+  width: 100%;
+  height: 100%;
+}
+
+.compost-card-info > .infos {
+  width: 30%;
+  font-size: 1.3vw;
+  color: #172e08;
+  height: 95%;
+  background-color: white;
+  border: thin solid white;
+}
 .compost-card-desc {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-size: 1.5vw;
   height: 30%;
 }
 .compost-card-buttons {
@@ -117,6 +132,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: #172e08;
   font-size: 1.5vw;
   background-color: transparent;
   border: thin solid transparent;
