@@ -108,3 +108,22 @@
   justify-content: space-between;
   height: 12%;
 }
+
+.compost-card-buttons > button {
+  width: 45%;
+  height: 98%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5vw;
+  background-color: transparent;
+  border: thin solid transparent;
+}
+
+.compost-card-buttons > .order {
+  background-color: #172e08;
+  color: #d8ffc0;
+  font-size: 1.7vw;
+}

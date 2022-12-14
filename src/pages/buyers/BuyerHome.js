@@ -15,7 +15,10 @@ export default function BuyerHome() {
           <span className="compost-card-image"></span>
           <span className="compost-card-info"></span>
           <span className="compost-card-desc"></span>
-          <span className="compost-card-buttons"></span>
+          <span className="compost-card-buttons">
+            <button className="price">Ksh 150/kg</button>
+            <button className="order">Order</button>
+          </span>
         </div>
       </section>
     </main>
