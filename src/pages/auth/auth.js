@@ -56,7 +56,7 @@ export default function Auth({ setLog, log, onLogin }) {
             type="text"
             placeholder="Enter username"
             autoComplete="on"
-            required
+            // required
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
@@ -67,7 +67,7 @@ export default function Auth({ setLog, log, onLogin }) {
           <input
             type="email"
             placeholder="Enter email"
-            required
+            // required
             autoComplete="on"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -80,7 +80,7 @@ export default function Auth({ setLog, log, onLogin }) {
             type="password"
             placeholder="Enter password"
             autoComplete="on"
-            required
+            // required
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
@@ -91,7 +91,7 @@ export default function Auth({ setLog, log, onLogin }) {
           <input
             type="password"
             placeholder="Confirm password"
-            required
+            // required
             autoComplete="on"
             value={passwordConfirmation}
             onChange={(e) => setPasswordConfirmation(e.target.value)}
