@@ -11,12 +11,12 @@ export default function BuyerHome() {
       <section id="compost-title">Todays Listings</section>
 
       <section id="compost-container">
-        <span id="compost-card"></span>
-        <span id="compost-card"></span>
-        <span id="compost-card"></span>
-        <span id="compost-card"></span>
-        <span id="compost-card"></span>
-        <span id="compost-card"></span>
+        <div className="compost-card">
+          <span className="compost-card-image"></span>
+          <span className="compost-card-info"></span>
+          <span className="compost-card-desc"></span>
+          <span className="compost-card-buttons"></span>
+        </div>
       </section>
     </main>
   );
