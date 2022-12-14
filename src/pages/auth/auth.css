@@ -59,3 +59,34 @@
 .login-title > #words {
   font-size: 1.7vw;
 }
+
+.user-fields {
+  width: 100%;
+  height: 15%;
+  font-size: 1.5vw;
+  margin-top: 1vw;
+  border: thin solid #172e08;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.user-fields > label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  height: 50%;
+}
+.user-fields > input {
+  font-size: 1.5vw;
+  width: 90%;
+  height: 50%;
+  border: thin solid #172e08;
+  border-radius: 0.4vw;
+}
+
+input:focus {
+  outline: none;
+}

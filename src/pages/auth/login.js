@@ -39,30 +39,30 @@ export default function Login({ onLogin }) {
           <span id="title">Welcome back</span>
           <span id="words">Please enter your details</span>
         </span>
-        <input
-          type="text"
-          autoComplete="on"
-          required
-          placeholder="Enter username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
 
-        {/* <input
-          type="email"
-          placeholder="Enter email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        /> */}
+        <span className="user-fields">
+          <label>User-name</label>
+          <input
+            type="text"
+            autoComplete="on"
+            required
+            placeholder="Enter username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+        </span>
 
-        <input
-          type="password"
-          placeholder="Enter password"
-          value={password}
-          autoComplete="on"
-          required
-          onChange={(e) => setPassword(e.target.value)}
-        />
+        <span className="user-fields">
+          <label>Password</label>
+          <input
+            type="password"
+            placeholder="Enter password"
+            value={password}
+            autoComplete="on"
+            required
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </span>
 
         <span className="error-cont">
           {errors.map((error) => {
