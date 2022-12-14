@@ -89,7 +89,7 @@ export default function Auth({ setLog, log, onLogin }) {
           {isLoading ? "Loading..." : "Sign Up"}
         </button>
       </form>
-      <div></div>
+      <div id="form-div">gghfhhf</div>
     </main>
   );
 }

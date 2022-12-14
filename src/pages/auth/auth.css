@@ -1,9 +1,33 @@
 .auth {
   width: 100%;
+  height: 44vw;
   border: thin solid;
   border: thin solid #172e08;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+#login {
+  width: 40%;
+  height: 100%;
+  border: thin solid #172e08;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#form-div {
+  width: 40%;
+  height: 100%;
+  border: thin solid #172e08;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/paradise2.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
