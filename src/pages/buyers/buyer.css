@@ -20,7 +20,6 @@
 #buyer-title {
   width: 100%;
   height: 7vw;
-  border: thin solid #172e08;
   display: flex;
   font-size: 2vw;
   flex-direction: column;
@@ -30,9 +29,22 @@
 
 #buyer-heading {
   font-weight: bold;
+  font-size: 2.3vw;
 }
 
 #buyer-par {
   color: grey;
   font-size: 1.6vw;
+}
+
+#compost-title {
+  width: 100%;
+  height: 5vw;
+  display: flex;
+  font-size: 3vw;
+  border: thin solid #172e08;
+  font-weight: bold;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

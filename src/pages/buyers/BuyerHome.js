@@ -7,6 +7,9 @@ export default function BuyerHome() {
           Purchase quality and quantity compost from us.
         </span>
       </section>
+
+      <section id="compost-title">Todays Listings</section>
     </main>
   );
 }
+
