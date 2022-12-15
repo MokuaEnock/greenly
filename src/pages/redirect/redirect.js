@@ -6,7 +6,8 @@ export default function Redirect() {
   return (
     <main id="redirect">
       <Link className="redirects" to="/disposer">
-        Dispose Waste
+        <img src={Trash} alt="money" />
+        <span>Dispose waste</span>
       </Link>
       <Link className="redirects" to="/partner">
         Partner with us

@@ -8,6 +8,8 @@ import Paper from "../images/paper.jpg";
 import Agric from "../images/agriculture.jpg";
 import Steel from "../images/steel.jpg";
 import Fashion from "../images/fashion.jpg";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
+
 export default function Landing() {
   return (
     <main id="landing">
@@ -21,6 +23,7 @@ export default function Landing() {
 
       <section id="images">
         <div className="recycle-image" id="recycle-image1">
+          {/* <LazyLoadImage src={Dumpsite1} alt="dumpsite1" effect="blur" /> */}
           <img src={Dumpsite1} alt="dumpsite1" />
         </div>
         <div id="recycle-icon"></div>
@@ -198,7 +201,8 @@ export default function Landing() {
             Join us today in turning Africa green, request a free waste
             collection from us.
           </span>
-          <Link to="/auth" id="redirect">
+
+          <Link to="/auth" id="redirect-url">
             Request for waste Collection
           </Link>
         </div>
