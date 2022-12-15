@@ -1,7 +1,7 @@
 import "./redirect.css";
 import { Link } from "react-router-dom";
 import Money from "../logos/moneysend.svg";
-
+import Trash from "../logos/39-trash.svg";
 export default function Redirect() {
   return (
     <main id="redirect">
@@ -16,7 +16,7 @@ export default function Redirect() {
       </Link>
       <Link className="redirects" to="/buyer">
         <img src={Money} alt="money" />
-        Buy compost
+        <span>Buy compost</span>
       </Link>
     </main>
   );

@@ -10,6 +10,7 @@
 
 .redirects {
   width: 20vw;
+  border-radius: 0.4vw;
   height: 15vw;
   background-color: white;
   display: flex;
@@ -23,6 +24,19 @@
 }
 
 /* color: #172e08; */
+
+.redirects > * {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.redirects > img {
+  height: 60%;
+}
 
 .redirects:hover {
   background-color: #d8ffc0;
