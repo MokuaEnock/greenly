@@ -19,6 +19,15 @@
   justify-content: center;
 }
 
+#redirect-head {
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+#redirect-par {
+  color: grey;
+}
+
 #redirect-cont {
   width: 100%;
   height: 30%;
