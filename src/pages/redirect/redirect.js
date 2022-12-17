@@ -6,8 +6,8 @@ export default function Redirect() {
   return (
     <main id="redirect">
       <section id="redirect-title">
-        <span id="redirect-head"></span>
-        <span id="redirect-par"></span>
+        <span id="redirect-head">Hello there Enock, welcome to Okoa.</span>
+        <span id="redirect-par">How would you like to use Okoa?</span>
       </section>
 
       <section id="redirect-cont">
