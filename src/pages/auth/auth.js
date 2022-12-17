@@ -11,11 +11,12 @@ export default function Auth({ setLog, log, onLogin }) {
   const [isLoading, setIsLoading] = useState(false);
 
   let navigate = useNavigate();
+
+
   function handleSubmit(e) {
     e.preventDefault();
-
     setIsLoading(true);
-    fetch("https://okoa-production.up.railway.app/signup", {
+    fetch("http://localhost:3000/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -31,7 +32,12 @@ export default function Auth({ setLog, log, onLogin }) {
       if (r.ok) {
         r.json().then((user) => {
           onLogin(user);
-          navigate("/disposer");
+          console.log("success", user)
+          setUsername("")
+          setEmail("")
+          setPassword("")
+          setPasswordConfirmation("")
+          navigate("/redirect");
         });
       } else {
         r.json().then((err) => {
@@ -41,6 +47,7 @@ export default function Auth({ setLog, log, onLogin }) {
       }
     });
   }
+
 
   return (
     <main className="auth">
