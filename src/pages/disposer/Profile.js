@@ -23,43 +23,7 @@ export default function Profile() {
             <input type="text" placeholder="Last name" />
           </span>
         </div>
-
-        <span className="inputs">
-          <label>First name</label>
-          <input type="text" placeholder="first name" />
-        </span>
-        <span className="inputs">
-          <label>First name</label>
-          <input type="text" placeholder="first name" />
-        </span>
-        <span className="inputs">
-          <label>First name</label>
-          <input type="text" placeholder="first name" />
-        </span>
-        <span className="inputs">
-          <label>First name</label>
-          <input type="text" placeholder="first name" />
-        </span>
-        <span className="inputs">
-          <label>First name</label>
-          <input type="text" placeholder="first name" />
-        </span>
-        <span className="inputs">
-          <label>First name</label>
-          <input type="text" placeholder="first name" />
-        </span>
-        <span className="inputs">
-          <label>First name</label>
-          <input type="text" placeholder="first name" />
-        </span>
-        <span className="inputs">
-          <label>First name</label>
-          <input type="text" placeholder="first name" />
-        </span>
-        <span className="inputs">
-          <label>First name</label>
-          <input type="text" placeholder="first name" />
-        </span>
+        
       </form>
     </main>
   );
