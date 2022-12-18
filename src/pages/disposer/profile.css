@@ -101,3 +101,7 @@ select:focus {
   color: #172e08;
   border: thin solid #172e08;
 }
+
+#locations > * {
+  width: 25%;
+}

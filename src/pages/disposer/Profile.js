@@ -74,20 +74,15 @@ export default function Profile() {
           </span>
         </div>
 
-        <div className="form-cont">
+        <div className="form-cont" id="address">
           <span className="inputs">
-            <label>Second name</label>
-            <input type="email" placeholder="Second name" />
+            <label>Your email address</label>
+            <input type="email" placeholder="example@example.com" />
           </span>
 
           <span className="inputs">
-            <label>Second name</label>
-            <input type="text" placeholder="Second name" />
-          </span>
-
-          <span className="inputs">
-            <label>Last name</label>
-            <input type="text" placeholder="Last name" />
+            <label>Your phone number</label>
+            <input type="text" placeholder="+254717594017" />
           </span>
         </div>
 
