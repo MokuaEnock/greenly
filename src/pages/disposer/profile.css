@@ -75,6 +75,29 @@ input {
 #form-buttons > * {
   border: thin solid #172e08;
   height: 100%;
-  font-size: 1.7vw;
+  font-size: 1.5vw;
   width: 15%;
+  background-color: #172e08;
+  color: #d8ffc0;
+}
+
+select {
+  width: 90%;
+  height: 40%;
+  font-size: 1.5vw;
+  background-color: #d8ffc0;
+  color: #172e08;
+  border: thin solid #172e08;
+}
+
+select:focus {
+  outline: none;
+}
+
+#poser-profile input {
+  width: 90%;
+  height: 40%;
+  font-size: 1.5vw;
+  color: #172e08;
+  border: thin solid #172e08;
 }
