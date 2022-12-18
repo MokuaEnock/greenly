@@ -12,17 +12,18 @@ export default function Profile() {
         <div className="form-cont">
           <span className="inputs">
             <label>First name</label>
-            <input type="text" placeholder="first name" />
+            <input type="text" placeholder="FIrst name" />
           </span>
           <span className="inputs">
-            <label>First name</label>
-            <input type="text" placeholder="first name" />
+            <label>Second name</label>
+            <input type="text" placeholder="Second name" />
           </span>
           <span className="inputs">
-            <label>First name</label>
-            <input type="text" placeholder="first name" />
+            <label>Last name</label>
+            <input type="text" placeholder="Last name" />
           </span>
         </div>
+
         <span className="inputs">
           <label>First name</label>
           <input type="text" placeholder="first name" />

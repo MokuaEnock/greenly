@@ -12,7 +12,6 @@
 #profile-title {
   width: 100%;
   height: 10vw;
-  border: thin solid #172e08;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,6 +36,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #d8ffc0;
+  height: 90%;
+}
+
+input {
+  text-align: center;
 }
 
 .form-cont {
