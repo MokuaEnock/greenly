@@ -11,6 +11,7 @@ import Disposer from "./pages/disposer/Disposer";
 import { useState, useEffect } from "react";
 import Redirect from "./pages/redirect/redirect";
 import Buyer from "./pages/buyers/buyer";
+import Profile from "./pages/disposer/Profile";
 
 function App() {
   let [user, setUser] = useState(null);
@@ -31,6 +32,7 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/about" element={<About />} />
         <Route path="/redirect" element={<Redirect />} />
+        <Route path="/profile" element={<Profile />} />
         <Route path="/collector" element={<Collector />} />
         <Route
           path="/auth"
