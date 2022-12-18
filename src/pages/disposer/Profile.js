@@ -87,7 +87,13 @@ export default function Profile() {
               name="phone"
               id="phone"
               pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}"
+              placeholder="254-712-345-678"
             />
+          </span>
+
+          <span className="inputs">
+            <label>Enter your id number</label>
+            <input type="number" placeholder="01234567" />
           </span>
         </div>
 
