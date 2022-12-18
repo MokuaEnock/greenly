@@ -43,7 +43,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #d8ffc0;
   height: 90%;
 }
 
@@ -52,6 +51,7 @@ input {
 }
 
 .form-cont {
+  margin-bottom: 0.5vw;
   height: 7vw;
   width: 100%;
   border: thin solid #172e08;
