@@ -43,19 +43,34 @@ export default function Profile() {
           <span className="inputs">
             <label>Enter county</label>
             <select id="location">
+              <option>Select sub-County</option>
               <option value="Nairobi">Nairobi</option>
               <option value="Kiambu">Kiambu</option>
               <option value="Kajiado">Kajiado</option>
               <option value="Machakos">Machakos</option>
             </select>
           </span>
+
           <span className="inputs">
-            <label>Second name</label>
-            <input type="text" placeholder="Second name" />
+            <label>Select your Sub-County</label>
+            <select id="location">
+              <option>Select sub-County</option>
+              <option value="Nairobi">Nairobi</option>
+              <option value="Kiambu">Kiambu</option>
+              <option value="Kajiado">Kajiado</option>
+              <option value="Machakos">Machakos</option>
+            </select>
           </span>
+
           <span className="inputs">
-            <label>Last name</label>
-            <input type="text" placeholder="Last name" />
+            <label>Select your ward</label>
+            <select id="location">
+              <option>Select sub-County</option>
+              <option value="Nairobi">Nairobi</option>
+              <option value="Kiambu">Kiambu</option>
+              <option value="Kajiado">Kajiado</option>
+              <option value="Machakos">Machakos</option>
+            </select>
           </span>
         </div>
 
