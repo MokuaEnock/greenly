@@ -39,10 +39,15 @@ export default function Profile() {
           </span>
         </div>
 
-        <div className="form-cont">
+        <div className="form-cont" id="locations">
           <span className="inputs">
             <label>Enter county</label>
-            <select></select>
+            <select id="location">
+              <option value="Nairobi">Nairobi</option>
+              <option value="Kiambu">Kiambu</option>
+              <option value="Kajiado">Kajiado</option>
+              <option value="Machakos">Machakos</option>
+            </select>
           </span>
           <span className="inputs">
             <label>Second name</label>
@@ -56,16 +61,15 @@ export default function Profile() {
 
         <div className="form-cont">
           <span className="inputs">
-            <label>Select your gender.</label>
-            <select id="age">
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-            </select>
+            <label>Second name</label>
+            <input type="email" placeholder="Second name" />
           </span>
+
           <span className="inputs">
             <label>Second name</label>
             <input type="text" placeholder="Second name" />
           </span>
+
           <span className="inputs">
             <label>Last name</label>
             <input type="text" placeholder="Last name" />
@@ -85,6 +89,15 @@ export default function Profile() {
             <label>Last name</label>
             <input type="text" placeholder="Last name" />
           </span>
+        </div>
+
+        <div id="form-buttons">
+          <button type="reset" id="reset-profile">
+            Reset Form
+          </button>
+          <button type="submit" id="submit-profile">
+            Submit Form
+          </button>
         </div>
       </form>
     </main>

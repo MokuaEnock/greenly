@@ -61,3 +61,13 @@ input {
   align-items: center;
   justify-content: space-evenly;
 }
+
+#form-buttons {
+  width: 100%;
+  height: 4vw;
+  border: thin solid #172e08;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
