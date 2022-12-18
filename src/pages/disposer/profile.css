@@ -13,4 +13,18 @@
   width: 100%;
   height: 10vw;
   border: thin solid #172e08;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#profile-head {
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+
+#profile-par {
+  font-size: 1.7vw;
+  color: grey;
 }
