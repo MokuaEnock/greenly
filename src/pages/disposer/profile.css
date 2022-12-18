@@ -71,3 +71,10 @@ input {
   align-items: center;
   justify-content: space-evenly;
 }
+
+#form-buttons > * {
+  border: thin solid #172e08;
+  height: 100%;
+  font-size: 1.7vw;
+  width: 15%;
+}
