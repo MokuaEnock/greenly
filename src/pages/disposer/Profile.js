@@ -82,7 +82,12 @@ export default function Profile() {
 
           <span className="inputs">
             <label>Your phone number</label>
-            <input type="text" placeholder="+254717594017" />
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}"
+            />
           </span>
         </div>
 
