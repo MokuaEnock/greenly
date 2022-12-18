@@ -1,3 +1,5 @@
+import "./disposer.css";
+
 export default function Profile() {
-  return <main>Disposer Profile</main>;
+  return <main id="poser-profile">Disposer Profile</main>;
 }

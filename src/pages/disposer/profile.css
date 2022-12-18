@@ -1,0 +1,10 @@
+#poser-profile {
+  height: 45vw;
+  width: 100%;
+  background-color: #d8ffc0;
+  color: #172e08;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
