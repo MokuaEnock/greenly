@@ -41,12 +41,12 @@ export default function Login({ onLogin }) {
         </span>
 
         <span className="user-fields">
-          <label>User-name</label>
+          <label>E-mail</label>
           <input
-            type="text"
+            type="email"
             autoComplete="on"
             required
-            placeholder="Enter username"
+            placeholder="Enter e-mail"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
