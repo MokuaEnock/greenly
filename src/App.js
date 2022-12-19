@@ -18,7 +18,7 @@ function App() {
   let [log, setLog] = useState(false);
 
   useEffect(() => {
-    fetch("https://okoa-production.up.railway.app/me").then((r) => {
+    fetch("http://localhost:3000/me").then((r) => {
       if (r.ok) {
         r.json().then((user) => setUser(user));
       }

@@ -4,8 +4,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Login({ onLogin }) {
-  // let [username, setUsername] = useState("");
-  let [email, setEmail] = useState("");
+  let [username, setUsername] = useState("");
+  // let [email, setEmail] = useState("");
   // let [login, setLogin] = useState("");
   let [password, setPassword] = useState("");
   let [errors, setErrors] = useState([]);
@@ -20,7 +20,7 @@ export default function Login({ onLogin }) {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ username, password }),
     }).then((r) => {
       setIsLoading(false);
       if (r.ok) {
@@ -45,14 +45,14 @@ export default function Login({ onLogin }) {
         </span>
 
         <span className="user-fields">
-          <label>E-mail</label>
+          <label>User-name</label>
           <input
-            type="email"
+            type="text"
             autoComplete="on"
             required
-            placeholder="Enter e-mail"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Enter username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
           />
         </span>
 

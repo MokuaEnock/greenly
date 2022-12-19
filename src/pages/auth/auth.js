@@ -15,7 +15,7 @@ export default function Auth({ setLog, log, onLogin }) {
   function handleSubmit(e) {
     e.preventDefault();
     setIsLoading(true);
-    fetch("http://localhost:3000/users", {
+    fetch("http://localhost:3000/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -31,11 +31,11 @@ export default function Auth({ setLog, log, onLogin }) {
       if (r.ok) {
         r.json().then((user) => {
           onLogin(user);
-          console.log("success", user)
-          setUsername("")
-          setEmail("")
-          setPassword("")
-          setPasswordConfirmation("")
+          console.log("success", user);
+          setUsername("");
+          setEmail("");
+          setPassword("");
+          setPasswordConfirmation("");
           navigate("/redirect");
         });
       } else {
