@@ -4,8 +4,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Login({ onLogin }) {
-  let [username, setUsername] = useState("");
-  // let [email, setEmail] = useState("");
+  // let [username, setUsername] = useState("");
+  let [email, setEmail] = useState("");
   // let [login, setLogin] = useState("");
   let [password, setPassword] = useState("");
   let [errors, setErrors] = useState([]);
@@ -15,19 +15,21 @@ export default function Login({ onLogin }) {
   function handleSubmit(e) {
     e.preventDefault();
     setIsLoading(true);
-    fetch("https://okoa-production.up.railway.app/login", {
+    fetch("http://localhost:3000//auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ username, password }),
+      body: JSON.stringify({ email, password }),
     }).then((r) => {
       setIsLoading(false);
       if (r.ok) {
         r.json().then((user) => onLogin(user));
+        console.log("success");
         navigate(`/disposer`);
       } else {
-        r.then((err) => setErrors(err.errors));
+        console.log("Fail ");
+        // r.then((err) => setErrors(err.errors));
       }
     });
   }
@@ -47,8 +49,8 @@ export default function Login({ onLogin }) {
             autoComplete="on"
             required
             placeholder="Enter e-mail"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </span>
 
