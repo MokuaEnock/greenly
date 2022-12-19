@@ -47,7 +47,6 @@ export default function Auth({ setLog, log, onLogin }) {
     });
   }
 
-
   return (
     <main className="auth">
       <form id="login" onSubmit={handleSubmit}>

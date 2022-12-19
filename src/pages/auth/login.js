@@ -24,8 +24,10 @@ export default function Login({ onLogin }) {
     }).then((r) => {
       setIsLoading(false);
       if (r.ok) {
-        r.json().then((user) => onLogin(user));
-        console.log("success");
+        r.json().then((user) => {
+          onLogin(user);
+          console.log("success", user);
+        });
         navigate(`/disposer`);
       } else {
         console.log("Fail ");
